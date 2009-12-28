@@ -1,0 +1,4 @@
+- add report details
+- add graph details
+- add workflow details
+- add diagrams
