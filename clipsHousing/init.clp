@@ -1,0 +1,5 @@
+(clear)
+(load "ai2KBS.clp")
+(reset)
+(load "ai2.clp")
+(run)
