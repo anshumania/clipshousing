@@ -1,4 +1,4 @@
-; Mon Dec 28 23:45:03 CET 2009
+; Tue Dec 29 15:31:53 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -91,3 +91,140 @@
 
 	(rent 1200)
 	(residentialOffer [AI2project_Class20004]))
+
+([AIProject2pprj_Class0] of  CITY_ADDRESS
+
+	(locAttribute moderate)
+	(locCoordinates [AIProject2pprj_Class1])
+	(number 123)
+	(street "ronda general mitre"))
+
+([AIProject2pprj_Class1] of  Coordinates
+
+	(X_Coord 123.0)
+	(Y_Coord 80.0))
+
+([AIProject2pprj_Class10] of  CITY_ADDRESS
+)
+
+([AIProject2pprj_Class11] of  CITY_ADDRESS
+
+	(locAttribute posh)
+	(locCoordinates [AIProject2pprj_Class12])
+	(number 23)
+	(street "aragò"))
+
+([AIProject2pprj_Class12] of  Coordinates
+
+	(X_Coord 50.0)
+	(Y_Coord 98.0))
+
+([AIProject2pprj_Class13] of  VILLA
+
+	(address [AIProject2pprj_Class14])
+	(area 200)
+	(furnishing semi)
+	(minimumRent 2000)
+	(numberOfBedrooms 5)
+	(parkingSpace TRUE)
+	(sunlight all_day)
+	(swimmingPool TRUE)
+	(temperatureControl both)
+	(terrace TRUE)
+	(view city))
+
+([AIProject2pprj_Class14] of  CITY_ADDRESS
+
+	(locAttribute posh)
+	(locCoordinates [AIProject2pprj_Class15])
+	(number 100)
+	(street "avinguda paral lel"))
+
+([AIProject2pprj_Class15] of  Coordinates
+
+	(X_Coord 30.0)
+	(Y_Coord 20.0))
+
+([AIProject2pprj_Class2] of  DUPLEX
+
+	(address [AIProject2pprj_Class0])
+	(area 160)
+	(balcony TRUE)
+	(floor 4)
+	(floor2 5)
+	(furnishing semi)
+	(minimumRent 1000)
+	(numberOfBedrooms 4)
+	(parkingSpace FALSE)
+	(petsAllowed TRUE)
+	(sunlight evening)
+	(swimmingPool TRUE)
+	(temperatureControl airConditioning)
+	(view city))
+
+([AIProject2pprj_Class3] of  PENTHOUSE
+
+	(address [AIProject2pprj_Class4])
+	(area 200)
+	(balcony TRUE)
+	(floor 2)
+	(furnishing full)
+	(minimumRent 1500)
+	(numberOfBedrooms 4)
+	(parkingSpace TRUE)
+	(sunlight afternoon)
+	(swimmingPool TRUE)
+	(temperatureControl both)
+	(view garden))
+
+([AIProject2pprj_Class4] of  CITY_ADDRESS
+
+	(locAttribute moderate)
+	(locCoordinates [AIProject2pprj_Class5])
+	(number 200)
+	(street "ronda general mitre"))
+
+([AIProject2pprj_Class5] of  Coordinates
+
+	(X_Coord 123.0)
+	(Y_Coord 87.0))
+
+([AIProject2pprj_Class6] of  DETACHED
+
+	(address [AIProject2pprj_Class7])
+	(area 100)
+	(furnishing semi)
+	(minimumRent 1200)
+	(numberOfBedrooms 3)
+	(parkingSpace TRUE)
+	(sunlight morning)
+	(swimmingPool TRUE)
+	(temperatureControl none)
+	(terrace TRUE)
+	(view garden))
+
+([AIProject2pprj_Class7] of  CITY_ADDRESS
+
+	(locAttribute downtown)
+	(locCoordinates [AIProject2pprj_Class8])
+	(number 97)
+	(street "gran via"))
+
+([AIProject2pprj_Class8] of  Coordinates
+
+	(X_Coord 70.0)
+	(Y_Coord 50.0))
+
+([AIProject2pprj_Class9] of  SEMI_DETACHED
+
+	(address [AIProject2pprj_Class11])
+	(area 140)
+	(furnishing semi)
+	(minimumRent 1200)
+	(numberOfBedrooms 3)
+	(parkingSpace TRUE)
+	(sunlight morning)
+	(swimmingPool FALSE)
+	(temperatureControl both)
+	(terrace TRUE)
+	(view city))
