@@ -1,4 +1,4 @@
-; Tue Dec 29 15:31:53 CET 2009
+; Tue Dec 29 16:41:31 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -145,6 +145,28 @@
 	(X_Coord 30.0)
 	(Y_Coord 20.0))
 
+([AIProject2pprj_Class16] of  UNIVERSITY
+
+	(nameOfTheService "Universitat Politècnica de Catalunya")
+	(schoolAddress [AIProject2pprj_Class17]))
+
+([AIProject2pprj_Class17] of  CITY_ADDRESS
+
+	(locAttribute happening)
+	(locCoordinates [AIProject2pprj_Class18])
+	(number 31)
+	(street "C.  Jordi Girona."))
+
+([AIProject2pprj_Class18] of  Coordinates
+
+	(X_Coord 20.0)
+	(Y_Coord 120.0))
+
+([AIProject2pprj_Class19] of  UNIVERSITY
+
+	(nameOfTheService "ESADE Business school")
+	(schoolAddress [AIProject2pprj_Class20]))
+
 ([AIProject2pprj_Class2] of  DUPLEX
 
 	(address [AIProject2pprj_Class0])
@@ -162,6 +184,30 @@
 	(temperatureControl airConditioning)
 	(view city))
 
+([AIProject2pprj_Class20] of  CITY_ADDRESS
+
+	(locAttribute posh)
+	(locCoordinates [AIProject2pprj_Class21])
+	(number 93)
+	(street "Av. Esplugues"))
+
+([AIProject2pprj_Class21] of  Coordinates
+
+	(X_Coord 15.0)
+	(Y_Coord 125.0))
+
+([AIProject2pprj_Class25] of  PRIMARY
+
+	(nameOfTheService "Escola pia balmes")
+	(schoolAddress [AIProject2pprj_Class29]))
+
+([AIProject2pprj_Class29] of  CITY_ADDRESS
+
+	(locAttribute downtown)
+	(locCoordinates [AIProject2pprj_Class31])
+	(number 37)
+	(street "balmes"))
+
 ([AIProject2pprj_Class3] of  PENTHOUSE
 
 	(address [AIProject2pprj_Class4])
@@ -176,6 +222,28 @@
 	(swimmingPool TRUE)
 	(temperatureControl both)
 	(view garden))
+
+([AIProject2pprj_Class31] of  Coordinates
+
+	(X_Coord 57.0)
+	(Y_Coord 59.0))
+
+([AIProject2pprj_Class32] of  SHOPPING_CENTRE
+
+	(nameOfTheService "Corte Ingles")
+	(shopAddress [AIProject2pprj_Class33]))
+
+([AIProject2pprj_Class33] of  CITY_ADDRESS
+
+	(locAttribute downtown)
+	(locCoordinates [AIProject2pprj_Class34])
+	(number 14)
+	(street "Plaça de Catalunya"))
+
+([AIProject2pprj_Class34] of  Coordinates
+
+	(X_Coord 45.0)
+	(Y_Coord 50.0))
 
 ([AIProject2pprj_Class4] of  CITY_ADDRESS
 

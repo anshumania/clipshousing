@@ -1,4 +1,4 @@
-; Tue Dec 29 15:31:53 CET 2009
+; Tue Dec 29 16:41:31 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -331,241 +331,241 @@
 
 	(name "SearchTab_Query"))
 
-([AIProject2pprj_ProjectKB_Class10182] of  String
+([AIProject2pprj_ProjectKB_Class10265] of  String
 
 	(name "CITY_ADDRESS")
 	(string_value "{loc_adr_}street{_st_}number{_num}"))
 
-([AIProject2pprj_ProjectKB_Class10183] of  String
+([AIProject2pprj_ProjectKB_Class10266] of  String
 
 	(name "RESTAURANT")
 	(string_value "{rec_res_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10184] of  String
+([AIProject2pprj_ProjectKB_Class10267] of  String
 
 	(name "NIGHT_BUS")
 	(string_value "{pbt_st_nitbus_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10185] of  String
+([AIProject2pprj_ProjectKB_Class10268] of  String
 
 	(name "PRIMARY")
 	(string_value "{prim_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10186] of  String
+([AIProject2pprj_ProjectKB_Class10269] of  String
 
 	(name "TRAIN_STATION")
 	(string_value "{pbt_train_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10187] of  String
+([AIProject2pprj_ProjectKB_Class10270] of  String
 
 	(name "APARTMENT")
 	(string_value "{apt_}address"))
 
-([AIProject2pprj_ProjectKB_Class10188] of  String
+([AIProject2pprj_ProjectKB_Class10271] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([AIProject2pprj_ProjectKB_Class10189] of  String
+([AIProject2pprj_ProjectKB_Class10272] of  String
 
 	(name "UNIVERSITY")
 	(string_value "{uni_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10190] of  String
+([AIProject2pprj_ProjectKB_Class10273] of  String
 
 	(name "SHOPS")
 	(string_value "{shp_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10191] of  String
+([AIProject2pprj_ProjectKB_Class10274] of  String
 
 	(name "SHOPPING_CENTRE")
 	(string_value "{shp_sc_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10192] of  String
+([AIProject2pprj_ProjectKB_Class10275] of  String
 
 	(name "GREEN_AREA")
 	(string_value "{srv_greenArea_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10193] of  String
+([AIProject2pprj_ProjectKB_Class10276] of  String
 
 	(name "BAR")
 	(string_value "{rec_bar_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10194] of  String
+([AIProject2pprj_ProjectKB_Class10277] of  String
 
 	(name "RECREATION")
 	(string_value "{rec_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10195] of  String
+([AIProject2pprj_ProjectKB_Class10278] of  String
 
 	(name "RESIDENTIAL")
 	(string_value "{res_}"))
 
-([AIProject2pprj_ProjectKB_Class10196] of  String
+([AIProject2pprj_ProjectKB_Class10279] of  String
 
 	(name "SUPERMARKET")
 	(string_value "{shp_sm_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10197] of  String
+([AIProject2pprj_ProjectKB_Class10280] of  String
 
 	(name "DETACHED")
 	(string_value "{hse_}address"))
 
-([AIProject2pprj_ProjectKB_Class10198] of  String
+([AIProject2pprj_ProjectKB_Class10281] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([AIProject2pprj_ProjectKB_Class10199] of  String
+([AIProject2pprj_ProjectKB_Class10282] of  String
 
 	(name "DUPLEX")
 	(string_value "{dup_}address"))
 
-([AIProject2pprj_ProjectKB_Class10200] of  String
+([AIProject2pprj_ProjectKB_Class10283] of  String
 
 	(name "THEATER")
 	(string_value "{rec_thtr_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10201] of  String
+([AIProject2pprj_ProjectKB_Class10284] of  String
 
 	(name "BICING")
 	(string_value "{pbt_rst_bicing_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10202] of  String
+([AIProject2pprj_ProjectKB_Class10285] of  String
 
 	(name "HOSPITAL")
 	(string_value "{hos_health_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10203] of  String
+([AIProject2pprj_ProjectKB_Class10286] of  String
 
 	(name "MUSEUM")
 	(string_value "{rec_nus_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10204] of  String
+([AIProject2pprj_ProjectKB_Class10287] of  String
 
 	(name "FLAT")
 	(string_value "{res_apt_flt_}address"))
 
-([AIProject2pprj_ProjectKB_Class10205] of  String
+([AIProject2pprj_ProjectKB_Class10288] of  String
 
 	(name "MINIMARKET")
 	(string_value "{shp_mm_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10206] of  String
+([AIProject2pprj_ProjectKB_Class10289] of  String
 
 	(name "STADIUM")
 	(string_value "{rec_stad_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10207] of  String
+([AIProject2pprj_ProjectKB_Class10290] of  String
 
 	(name "HOUSE")
 	(string_value "{hse_}"))
 
-([AIProject2pprj_ProjectKB_Class10208] of  String
+([AIProject2pprj_ProjectKB_Class10291] of  String
 
 	(name "ATTIC")
 	(string_value "{att_}address"))
 
-([AIProject2pprj_ProjectKB_Class10209] of  String
+([AIProject2pprj_ProjectKB_Class10292] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([AIProject2pprj_ProjectKB_Class10210] of  String
+([AIProject2pprj_ProjectKB_Class10293] of  String
 
 	(name "Coordinates")
 	(string_value "{coord_}X_Coord{_x_}Y_Coord{_y}"))
 
-([AIProject2pprj_ProjectKB_Class10211] of  String
+([AIProject2pprj_ProjectKB_Class10294] of  String
 
 	(name "SERVICES")
 	(string_value "{service_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10212] of  String
+([AIProject2pprj_ProjectKB_Class10295] of  String
 
 	(name "SEMI_DETACHED")
 	(string_value "{hse_}address"))
 
-([AIProject2pprj_ProjectKB_Class10213] of  String
+([AIProject2pprj_ProjectKB_Class10296] of  String
 
 	(name "SCHOOL")
 	(string_value "{schl_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10214] of  String
+([AIProject2pprj_ProjectKB_Class10297] of  String
 
 	(name "CLUB")
 	(string_value "{rec_club_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10215] of  String
+([AIProject2pprj_ProjectKB_Class10298] of  String
 
 	(name "VILLA")
 	(string_value "{hse_}address"))
 
-([AIProject2pprj_ProjectKB_Class10216] of  String
+([AIProject2pprj_ProjectKB_Class10299] of  String
 
 	(name "PUBLIC TRANSPORT")
 	(string_value "{pbTrnsp_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10217] of  String
+([AIProject2pprj_ProjectKB_Class10300] of  String
 
 	(name "BUS")
 	(string_value "{pbt_st_bus_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10218] of  String
+([AIProject2pprj_ProjectKB_Class10301] of  String
 
 	(name "ZOO")
 	(string_value "{rec_zoo_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10219] of  String
+([AIProject2pprj_ProjectKB_Class10302] of  String
 
 	(name "SECONDARY")
 	(string_value "{sec_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10220] of  String
+([AIProject2pprj_ProjectKB_Class10303] of  String
 
 	(name "PENTHOUSE")
 	(string_value "{apt_pent_}address"))
 
-([AIProject2pprj_ProjectKB_Class10221] of  String
+([AIProject2pprj_ProjectKB_Class10304] of  String
 
 	(name "STATION")
 	(string_value "{station_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10222] of  String
+([AIProject2pprj_ProjectKB_Class10305] of  String
 
 	(name "MALL")
 	(string_value "{shp_mal_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10223] of  String
+([AIProject2pprj_ProjectKB_Class10306] of  String
 
 	(name "RENTAL_OFFER")
 	(string_value "{off_}residentialOffer"))
 
-([AIProject2pprj_ProjectKB_Class10224] of  String
+([AIProject2pprj_ProjectKB_Class10307] of  String
 
 	(name "HEALTH")
 	(string_value "{health_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10225] of  String
+([AIProject2pprj_ProjectKB_Class10308] of  String
 
 	(name "TUBE")
 	(string_value "{pbt_st_tube_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class10226] of  Map_Entry
+([AIProject2pprj_ProjectKB_Class10309] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([AIProject2pprj_ProjectKB_Class10227] of  Map_Entry
+([AIProject2pprj_ProjectKB_Class10310] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([AIProject2pprj_ProjectKB_Class10228] of  Map_Entry
+([AIProject2pprj_ProjectKB_Class10311] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
@@ -589,50 +589,50 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[AIProject2pprj_ProjectKB_Class10182]
-		[AIProject2pprj_ProjectKB_Class10183]
-		[AIProject2pprj_ProjectKB_Class10184]
-		[AIProject2pprj_ProjectKB_Class10185]
-		[AIProject2pprj_ProjectKB_Class10186]
-		[AIProject2pprj_ProjectKB_Class10187]
-		[AIProject2pprj_ProjectKB_Class10188]
-		[AIProject2pprj_ProjectKB_Class10189]
-		[AIProject2pprj_ProjectKB_Class10190]
-		[AIProject2pprj_ProjectKB_Class10191]
-		[AIProject2pprj_ProjectKB_Class10192]
-		[AIProject2pprj_ProjectKB_Class10193]
-		[AIProject2pprj_ProjectKB_Class10194]
-		[AIProject2pprj_ProjectKB_Class10195]
-		[AIProject2pprj_ProjectKB_Class10196]
-		[AIProject2pprj_ProjectKB_Class10197]
-		[AIProject2pprj_ProjectKB_Class10198]
-		[AIProject2pprj_ProjectKB_Class10199]
-		[AIProject2pprj_ProjectKB_Class10200]
-		[AIProject2pprj_ProjectKB_Class10201]
-		[AIProject2pprj_ProjectKB_Class10202]
-		[AIProject2pprj_ProjectKB_Class10203]
-		[AIProject2pprj_ProjectKB_Class10204]
-		[AIProject2pprj_ProjectKB_Class10205]
-		[AIProject2pprj_ProjectKB_Class10206]
-		[AIProject2pprj_ProjectKB_Class10207]
-		[AIProject2pprj_ProjectKB_Class10208]
-		[AIProject2pprj_ProjectKB_Class10209]
-		[AIProject2pprj_ProjectKB_Class10210]
-		[AIProject2pprj_ProjectKB_Class10211]
-		[AIProject2pprj_ProjectKB_Class10212]
-		[AIProject2pprj_ProjectKB_Class10213]
-		[AIProject2pprj_ProjectKB_Class10214]
-		[AIProject2pprj_ProjectKB_Class10215]
-		[AIProject2pprj_ProjectKB_Class10216]
-		[AIProject2pprj_ProjectKB_Class10217]
-		[AIProject2pprj_ProjectKB_Class10218]
-		[AIProject2pprj_ProjectKB_Class10219]
-		[AIProject2pprj_ProjectKB_Class10220]
-		[AIProject2pprj_ProjectKB_Class10221]
-		[AIProject2pprj_ProjectKB_Class10222]
-		[AIProject2pprj_ProjectKB_Class10223]
-		[AIProject2pprj_ProjectKB_Class10224]
-		[AIProject2pprj_ProjectKB_Class10225]))
+		[AIProject2pprj_ProjectKB_Class10265]
+		[AIProject2pprj_ProjectKB_Class10266]
+		[AIProject2pprj_ProjectKB_Class10267]
+		[AIProject2pprj_ProjectKB_Class10268]
+		[AIProject2pprj_ProjectKB_Class10269]
+		[AIProject2pprj_ProjectKB_Class10270]
+		[AIProject2pprj_ProjectKB_Class10271]
+		[AIProject2pprj_ProjectKB_Class10272]
+		[AIProject2pprj_ProjectKB_Class10273]
+		[AIProject2pprj_ProjectKB_Class10274]
+		[AIProject2pprj_ProjectKB_Class10275]
+		[AIProject2pprj_ProjectKB_Class10276]
+		[AIProject2pprj_ProjectKB_Class10277]
+		[AIProject2pprj_ProjectKB_Class10278]
+		[AIProject2pprj_ProjectKB_Class10279]
+		[AIProject2pprj_ProjectKB_Class10280]
+		[AIProject2pprj_ProjectKB_Class10281]
+		[AIProject2pprj_ProjectKB_Class10282]
+		[AIProject2pprj_ProjectKB_Class10283]
+		[AIProject2pprj_ProjectKB_Class10284]
+		[AIProject2pprj_ProjectKB_Class10285]
+		[AIProject2pprj_ProjectKB_Class10286]
+		[AIProject2pprj_ProjectKB_Class10287]
+		[AIProject2pprj_ProjectKB_Class10288]
+		[AIProject2pprj_ProjectKB_Class10289]
+		[AIProject2pprj_ProjectKB_Class10290]
+		[AIProject2pprj_ProjectKB_Class10291]
+		[AIProject2pprj_ProjectKB_Class10292]
+		[AIProject2pprj_ProjectKB_Class10293]
+		[AIProject2pprj_ProjectKB_Class10294]
+		[AIProject2pprj_ProjectKB_Class10295]
+		[AIProject2pprj_ProjectKB_Class10296]
+		[AIProject2pprj_ProjectKB_Class10297]
+		[AIProject2pprj_ProjectKB_Class10298]
+		[AIProject2pprj_ProjectKB_Class10299]
+		[AIProject2pprj_ProjectKB_Class10300]
+		[AIProject2pprj_ProjectKB_Class10301]
+		[AIProject2pprj_ProjectKB_Class10302]
+		[AIProject2pprj_ProjectKB_Class10303]
+		[AIProject2pprj_ProjectKB_Class10304]
+		[AIProject2pprj_ProjectKB_Class10305]
+		[AIProject2pprj_ProjectKB_Class10306]
+		[AIProject2pprj_ProjectKB_Class10307]
+		[AIProject2pprj_ProjectKB_Class10308]))
 
 ([CLSES_TAB] of  Widget
 
@@ -684,9 +684,9 @@
 ([KB_120621_Class1] of  Map
 
 	(entries
-		[AIProject2pprj_ProjectKB_Class10226]
-		[AIProject2pprj_ProjectKB_Class10227]
-		[AIProject2pprj_ProjectKB_Class10228]))
+		[AIProject2pprj_ProjectKB_Class10309]
+		[AIProject2pprj_ProjectKB_Class10310]
+		[AIProject2pprj_ProjectKB_Class10311]))
 
 ([KB_120621_Class75] of  Property_List
 
