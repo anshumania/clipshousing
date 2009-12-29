@@ -1,7 +1,7 @@
 
-;;**************
-;;* DEFCLASSES *
-;;**************
+;------------
+; DEFCLASSES 
+;------------
 
 (defclass MAIN::Result
 	(is-a USER)
@@ -29,9 +29,9 @@
 )
 
 
-;;************
-;;* MESSAGES *
-;;************
+;------------------
+; MESSAGE HANDLERS 
+;------------------
 
 (defmessage-handler RENTAL_OFFER print()
   (printout t "------------RENTAL OFFER-------------------" crlf)
@@ -65,9 +65,9 @@
 
 
 
-;;****************
-;;* DEFFUNCTIONS *
-;;****************
+;----------------
+; DEFFUNCTIONS 
+;----------------
 
 (deffunction ask-open-question (?question)
 	(format t "%s? " ?question)
@@ -78,29 +78,36 @@
 
 
 
-;;;*********
-;;; RULES 
-;;;*********
+;--------------------------
+; Entry point into the kbs
+;--------------------------
 
-;;;---------------------------------------------------
-;;;- Entry point into the system
-;;;--------------------------------------------------
-
-(defrule start
+(defrule startKBS
 	(declare (salience 10))
 	=>
 	(printout t "------------------------------------------" crlf)
-	(printout t "------ Expert system to find a house -----" crlf)
+	(printout t "       Expert system to find a house      " crlf)
 	(printout t "------------------------------------------" crlf)
 	(printout t crlf)
-	;;;go to module personal-questions
-	(focus createUserProfile output) ;; todo ...modularize.
+	; execute modules in order  
+        ; createUserProfile , output
+	(focus createUserProfile output endKBS) ;; todo ...modularize.
 )
 
 
-;;;------------------------------------------
-;;;- create the user-profile
-;;;------------------------------------------
+
+;----------MODULES--------
+
+
+
+;---------------------------------------------------------------
+; Create a Profile for the User interacting with the KBS
+; This module create an instance of USER_PROFILE by
+; asking questions from the user interactiong with the KBS
+; It also creates a profiler which the KBS uses to actively
+; profile the user according to the information he/she provides
+;---------------------------------------------------------------
+
 
 (defmodule createUserProfile "Generate a user Profile"
 	(import MAIN ?ALL)
@@ -112,95 +119,95 @@
 	=>
 	(bind ?firstname (ask-open-question "What is your firstname"))
 	(bind ?secondName (ask-open-question "What is your secondName"))
-  ;;;create an instance of USER_PROFILE
+  ; create an instance of USER_PROFILE
 	(bind ?user (make-instance user of USER_PROFILE))
-  ;;;add this to our instance of USER_PROFILE
+  ; add the inputs the instance of USER_PROFILE
 	(send ?user put-firstName ?firstname)
-  (send ?user put-secondName ?secondName)
-  ;;;insert this Person into recommendation
-    
-      ;;(bind ?recommend (make-instance user of Recommendation))
-      ;;(send ?recommend put-user_profile ?user)
-       
-      (assert (profiler(user_profile ?user)(completed "FALSE")))
+  	(send ?user put-secondName ?secondName)
+  ; create the profiler for the user
+        (assert (profiler(user_profile ?user)(completed "FALSE")))
 
 
-  ;;;add facts that our first and surname are ok
-  (assert (userProfile firstName ok))
-  (assert (userProfile secondName ok))
-  (assert (userProfile complete ok))
+  ; add a fact to indicate the userProfile is ok
+  	;(assert (userProfile firstName ok))
+	;(assert (userProfile secondName ok))
+	(assert (userProfile complete ok))
 )
 
-;;;------------------------------------------
-;;;- fetch available offers
-;;;------------------------------------------
+;------------------------------------------
+; Fetches all the available offers
+;------------------------------------------
 
 (defrule queryRentalOffers
 	(userProfile complete ok)
         ?profiler <- (profiler (user_profile ?user)(completed "FALSE"))
 	=>
-    ;;;initialize our system and so get all instances of offer and copy them into
-    ;;;a new instance proposal
-   ;; (assert(loop-continue TRUE))
-    (do-for-all-instances ((?offer RENTAL_OFFER))
-     ;do-for condition
+    ; Initialize the KBS by fetching all offers and copying them into
+    ; an instance of a Recommendation
+	    (do-for-all-instances ((?offer RENTAL_OFFER))
+		     ;do-for condition
 
-     ;do-for execution
-     (make-instance of Recommendation (rental_offer ?offer))
-    )
-    (assert(loop-continue FALSE))
-  ;;(assert(doneIs TRUE))
-    (modify ?profiler(completed "TRUE"))
-
-  ;;(focus output)
+		     ;do-for execution
+	   	 (make-instance of Recommendation (rental_offer ?offer))
+    	    )
+    ; modify the profiler to indicate that it has got all the offers
+	(modify ?profiler(completed "TRUE"))
 )
 
 
+
+
+;---------------------------------------------
+; Module for printing out the Recommendations
+;---------------------------------------------
+(defmodule output "Module for printing the Recommendations"
+	(import MAIN ?ALL)
+        (import createUserProfile ?ALL)
+        (export ?ALL)
+)
+
+
+(defrule printall
+	?profiler <- (profiler (user_profile ?user)(completed "TRUE"))
+	=>
+	(printout t "--------------------in printall-------------------------------------------------" crlf)
+  	(format t "Sr/a. %s,%s%n" (send ?user get-firstName) (send ?user get-secondName))
+	(printout t " THE KBS recommends " crlf crlf)
+	(do-for-all-instances 
+	    ((?recommendation Recommendation))
+	  ; todo only for recommendations which are at right recommendation level
+	    (printout t (send (send ?recommendation get-rental_offer) print))
+	)
+	(modify ?profiler (completed "TERMINATE"))
+        (assert(doneIs TRUE))
+;	(printout t "-------------------doneISTRUE-------------------------------------------------" crlf)
+	;;(pop-focus)
+)
+
+
+;---------------------------------------------
+; Module to terminate the KBS
+;---------------------------------------------
+(defmodule endKBS "Termination MODULE"
+	(import MAIN ?ALL)
+        (import output ?ALL)
+        (export ?ALL)
+)
+
+
+; Termination rule
 (defrule terminate "terminate the program"
   ;;(declare (salience -10))
   ;;?profiler <- (profiler (user_profile ?user) (completed "TERMINATE"))
    (doneIs TRUE)
 	=>
   (printout t "---------------------------------------------------------------------" crlf)
-  (printout t "Thank you for using our housing service" crlf)
+  (printout t " Hope you liked our recommendations. Than you for using our KBS      " crlf)
   (printout t "---------------------------------------------------------------------" crlf)   
   (printout t crlf)  
   ;;(pop-focus)
 )
 
 
-
-;;;----------------------------------------------- -
-;;;- define a module for the output of our program -
-;;;-------------------------------------------------
-(defmodule output "Module for outputting the results"
-	(import MAIN ?ALL)
-        (import createUserProfile ?ALL)
-        (export ?ALL)
-;;	(printout t "--------------------in output-------------------------------------------------" crlf)
-)
-
-
-
-(defrule printall
-	?profiler <- (profiler (user_profile ?user)(completed "TRUE"))
-        ;;(doneIs TRUE)
-	=>
-	(printout t "--------------------in printall-------------------------------------------------" crlf)
-  ;;;%s stands for string
-  ;;;%n stands for newline
-	(format t "Sr/a. %s,%s%n" (send ?user get-firstName) (send ?user get-secondName))
-	(printout t "This is the list of recommmendations" crlf crlf)
-	(do-for-all-instances 
-	    ((?recommendation Recommendation))
-	  ;;  (eq (send ?proposal get-is_proposed) TRUE)
-	    ;action
-	    (printout t (send (send ?recommendation get-rental_offer) print))
-	)
-	(modify ?profiler (completed "TERMINATE"))
-        (assert(doneIs TRUE))
-	(printout t "-------------------doneISTRUE-------------------------------------------------" crlf)
-	;;(pop-focus)
-)
 
 
