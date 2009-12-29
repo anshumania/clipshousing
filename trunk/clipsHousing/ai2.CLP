@@ -117,6 +117,8 @@
 (defrule user-name "Get the user name"
 	(not (object (is-a USER_PROFILE)))
 	=>
+	
+	(printout t "Kindly interact with the KBS to get personalized recommendations " crlf)
 	(bind ?firstname (ask-open-question "What is your firstname"))
 	(bind ?secondName (ask-open-question "What is your secondName"))
   ; create an instance of USER_PROFILE
