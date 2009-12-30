@@ -1,4 +1,4 @@
-; Tue Dec 29 22:07:41 CET 2009
+; Wed Dec 30 02:37:01 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -104,8 +104,12 @@
 	(X_Coord 123.0)
 	(Y_Coord 80.0))
 
-([AIProject2pprj_Class10] of  CITY_ADDRESS
-)
+([AIProject2pprj_Class10000] of  RESTAURANT
+
+	(nameOfTheService "Veg World")
+	(restaurantType indian)
+	(serviceLocation [AIProject2pprj_Class29])
+	(typeOfTheService "RESTAURANT"))
 
 ([AIProject2pprj_Class11] of  CITY_ADDRESS
 
@@ -148,7 +152,8 @@
 ([AIProject2pprj_Class16] of  UNIVERSITY
 
 	(nameOfTheService "Universitat Politècnica de Catalunya")
-	(schoolAddress [AIProject2pprj_Class17]))
+	(serviceLocation [AIProject2pprj_Class17])
+	(typeOfTheService "UNIVERSITY"))
 
 ([AIProject2pprj_Class17] of  CITY_ADDRESS
 
@@ -165,7 +170,8 @@
 ([AIProject2pprj_Class19] of  UNIVERSITY
 
 	(nameOfTheService "ESADE Business school")
-	(schoolAddress [AIProject2pprj_Class20]))
+	(serviceLocation [AIProject2pprj_Class20])
+	(typeOfTheService "UNIVERSITY"))
 
 ([AIProject2pprj_Class2] of  DUPLEX
 
@@ -199,7 +205,8 @@
 ([AIProject2pprj_Class25] of  PRIMARY
 
 	(nameOfTheService "Escola pia balmes")
-	(schoolAddress [AIProject2pprj_Class29]))
+	(serviceLocation [AI2project_Class30013])
+	(typeOfTheService "PRIMARY"))
 
 ([AIProject2pprj_Class29] of  CITY_ADDRESS
 
@@ -231,7 +238,8 @@
 ([AIProject2pprj_Class32] of  SHOPPING_CENTRE
 
 	(nameOfTheService "Corte Ingles")
-	(shopAddress [AIProject2pprj_Class33]))
+	(serviceLocation [AI2project_Class30005])
+	(typeOfTheService "SHOPPING_CENTRE"))
 
 ([AIProject2pprj_Class33] of  CITY_ADDRESS
 
