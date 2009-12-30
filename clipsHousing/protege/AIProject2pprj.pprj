@@ -1,4 +1,4 @@
-; Tue Dec 29 22:07:41 CET 2009
+; Wed Dec 30 02:37:01 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -331,246 +331,738 @@
 
 	(name "SearchTab_Query"))
 
-([AIProject2pprj_ProjectKB_Class10] of  String
+([AIProject2pprj_ProjectKB_Class10007] of  Widget
 
-	(name "APARTMENT")
-	(string_value "{apt_}address"))
+	(height 60)
+	(is_hidden FALSE)
+	(name "recAddress")
+	(property_list [AIProject2pprj_ProjectKB_Class10008])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
 
-([AIProject2pprj_ProjectKB_Class11] of  String
+([AIProject2pprj_ProjectKB_Class10008] of  Property_List
 
-	(name "SHOPS")
-	(string_value "{shp_}nameOfTheService"))
+	(properties
+		[AIProject2pprj_ProjectKB_Class10009]
+		[AIProject2pprj_ProjectKB_Class10010]))
 
-([AIProject2pprj_ProjectKB_Class12] of  String
+([AIProject2pprj_ProjectKB_Class10009] of  Boolean
 
-	(name "UNIVERSITY")
-	(string_value "{uni_}nameOfTheService"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
 
-([AIProject2pprj_ProjectKB_Class13] of  String
+([AIProject2pprj_ProjectKB_Class10010] of  Boolean
 
-	(name "SHOPPING_CENTRE")
-	(string_value "{shp_sc_}nameOfTheService"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
 
-([AIProject2pprj_ProjectKB_Class14] of  String
+([AIProject2pprj_ProjectKB_Class10037] of  Widget
 
-	(name "GREEN_AREA")
-	(string_value "{srv_greenArea_}nameOfTheService"))
+	(height 60)
+	(is_hidden FALSE)
+	(name "schoolAddress")
+	(property_list [AIProject2pprj_ProjectKB_Class10038])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
 
-([AIProject2pprj_ProjectKB_Class15] of  String
+([AIProject2pprj_ProjectKB_Class10038] of  Property_List
 
-	(name "RECREATION")
-	(string_value "{rec_}nameOfTheService"))
+	(properties
+		[AIProject2pprj_ProjectKB_Class10039]
+		[AIProject2pprj_ProjectKB_Class10040]))
 
-([AIProject2pprj_ProjectKB_Class16] of  String
+([AIProject2pprj_ProjectKB_Class10039] of  Boolean
 
-	(name "BAR")
-	(string_value "{rec_bar_}nameOfTheService"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
 
-([AIProject2pprj_ProjectKB_Class17] of  String
+([AIProject2pprj_ProjectKB_Class10040] of  Boolean
 
-	(name "RESIDENTIAL")
-	(string_value "{res_}"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
 
-([AIProject2pprj_ProjectKB_Class18] of  String
+([AIProject2pprj_ProjectKB_Class10048] of  Widget
 
-	(name "SUPERMARKET")
-	(string_value "{shp_sm_}nameOfTheService"))
+	(height 60)
+	(is_hidden FALSE)
+	(name "schoolAddress")
+	(property_list [AIProject2pprj_ProjectKB_Class10049])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
 
-([AIProject2pprj_ProjectKB_Class19] of  String
+([AIProject2pprj_ProjectKB_Class10049] of  Property_List
 
-	(name "DETACHED")
-	(string_value "{hse_}address"))
+	(properties
+		[AIProject2pprj_ProjectKB_Class10050]
+		[AIProject2pprj_ProjectKB_Class10051]))
 
-([AIProject2pprj_ProjectKB_Class20] of  String
+([AIProject2pprj_ProjectKB_Class10050] of  Boolean
 
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
 
-([AIProject2pprj_ProjectKB_Class21] of  String
+([AIProject2pprj_ProjectKB_Class10051] of  Boolean
 
-	(name "DUPLEX")
-	(string_value "{dup_}address"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
 
-([AIProject2pprj_ProjectKB_Class22] of  String
+([AIProject2pprj_ProjectKB_Class10055] of  Widget
 
-	(name "THEATER")
-	(string_value "{rec_thtr_}nameOfTheService"))
+	(height 60)
+	(is_hidden FALSE)
+	(name "shopAddress")
+	(property_list [AIProject2pprj_ProjectKB_Class10056])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 120))
 
-([AIProject2pprj_ProjectKB_Class23] of  String
+([AIProject2pprj_ProjectKB_Class10056] of  Property_List
 
-	(name "BICING")
-	(string_value "{pbt_rst_bicing_}nameOfTheService"))
+	(properties
+		[AIProject2pprj_ProjectKB_Class10057]
+		[AIProject2pprj_ProjectKB_Class10058]))
 
-([AIProject2pprj_ProjectKB_Class24] of  String
+([AIProject2pprj_ProjectKB_Class10057] of  Boolean
 
-	(name "HOSPITAL")
-	(string_value "{hos_health_}nameOfTheService"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
 
-([AIProject2pprj_ProjectKB_Class25] of  String
+([AIProject2pprj_ProjectKB_Class10058] of  Boolean
 
-	(name "MUSEUM")
-	(string_value "{rec_nus_}nameOfTheService"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
 
-([AIProject2pprj_ProjectKB_Class26] of  String
+([AIProject2pprj_ProjectKB_Class10110] of  Widget
 
-	(name "FLAT")
-	(string_value "{res_apt_flt_}address"))
+	(height 60)
+	(is_hidden FALSE)
+	(name "serviceLocation")
+	(property_list [AIProject2pprj_ProjectKB_Class10111])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 240))
 
-([AIProject2pprj_ProjectKB_Class27] of  String
+([AIProject2pprj_ProjectKB_Class10111] of  Property_List
+)
 
-	(name "MINIMARKET")
-	(string_value "{shp_mm_}nameOfTheService"))
+([AIProject2pprj_ProjectKB_Class10112] of  Widget
 
-([AIProject2pprj_ProjectKB_Class28] of  String
+	(height 60)
+	(is_hidden FALSE)
+	(name "serviceLocation")
+	(property_list [AIProject2pprj_ProjectKB_Class10113])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
 
-	(name "STADIUM")
-	(string_value "{rec_stad_}nameOfTheService"))
+([AIProject2pprj_ProjectKB_Class10113] of  Property_List
+)
 
-([AIProject2pprj_ProjectKB_Class29] of  String
+([AIProject2pprj_ProjectKB_Class10114] of  Widget
 
-	(name "HOUSE")
-	(string_value "{hse_}"))
+	(height 60)
+	(is_hidden FALSE)
+	(name "serviceLocation")
+	(property_list [AIProject2pprj_ProjectKB_Class10115])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
 
-([AIProject2pprj_ProjectKB_Class30] of  String
+([AIProject2pprj_ProjectKB_Class10115] of  Property_List
+)
 
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
+([AIProject2pprj_ProjectKB_Class10116] of  Widget
 
-([AIProject2pprj_ProjectKB_Class31] of  String
+	(height 60)
+	(is_hidden FALSE)
+	(name "serviceLocation")
+	(property_list [AIProject2pprj_ProjectKB_Class10117])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
 
-	(name "ATTIC")
-	(string_value "{att_}address"))
+([AIProject2pprj_ProjectKB_Class10117] of  Property_List
+)
 
-([AIProject2pprj_ProjectKB_Class32] of  String
+([AIProject2pprj_ProjectKB_Class10118] of  Widget
 
-	(name "Coordinates")
-	(string_value "{coord_}X_Coord{_x_}Y_Coord{_y}"))
+	(height 60)
+	(is_hidden FALSE)
+	(name "serviceLocation")
+	(property_list [AIProject2pprj_ProjectKB_Class10119])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 240))
 
-([AIProject2pprj_ProjectKB_Class33] of  String
+([AIProject2pprj_ProjectKB_Class10119] of  Property_List
 
-	(name "SERVICES")
-	(string_value "{service_}nameOfTheService"))
+	(properties
+		[AIProject2pprj_ProjectKB_Class10120]
+		[AIProject2pprj_ProjectKB_Class10121]))
 
-([AIProject2pprj_ProjectKB_Class34] of  String
+([AIProject2pprj_ProjectKB_Class10120] of  Boolean
 
-	(name "SEMI_DETACHED")
-	(string_value "{hse_}address"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
 
-([AIProject2pprj_ProjectKB_Class35] of  String
+([AIProject2pprj_ProjectKB_Class10121] of  Boolean
 
-	(name "SCHOOL")
-	(string_value "{schl_}nameOfTheService"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
 
-([AIProject2pprj_ProjectKB_Class36] of  String
+([AIProject2pprj_ProjectKB_Class10122] of  Widget
 
-	(name "CLUB")
-	(string_value "{rec_club_}nameOfTheService"))
+	(height 60)
+	(is_hidden FALSE)
+	(name "serviceLocation")
+	(property_list [AIProject2pprj_ProjectKB_Class10123])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
 
-([AIProject2pprj_ProjectKB_Class37] of  String
+([AIProject2pprj_ProjectKB_Class10123] of  Property_List
 
-	(name "PUBLIC TRANSPORT")
-	(string_value "{pbTrnsp_}nameOfTheService"))
+	(properties
+		[AIProject2pprj_ProjectKB_Class10124]
+		[AIProject2pprj_ProjectKB_Class10125]))
 
-([AIProject2pprj_ProjectKB_Class38] of  String
+([AIProject2pprj_ProjectKB_Class10124] of  Boolean
 
-	(name "VILLA")
-	(string_value "{hse_}address"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
 
-([AIProject2pprj_ProjectKB_Class39] of  String
+([AIProject2pprj_ProjectKB_Class10125] of  Boolean
 
-	(name "BUS")
-	(string_value "{pbt_st_bus_}nameOfTheService"))
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
 
-([AIProject2pprj_ProjectKB_Class4] of  String
+([AIProject2pprj_ProjectKB_Class10126] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "serviceLocation")
+	(property_list [AIProject2pprj_ProjectKB_Class10127])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([AIProject2pprj_ProjectKB_Class10127] of  Property_List
+
+	(properties
+		[AIProject2pprj_ProjectKB_Class10128]
+		[AIProject2pprj_ProjectKB_Class10129]))
+
+([AIProject2pprj_ProjectKB_Class10128] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([AIProject2pprj_ProjectKB_Class10129] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([AIProject2pprj_ProjectKB_Class10130] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "serviceLocation")
+	(property_list [AIProject2pprj_ProjectKB_Class10131])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([AIProject2pprj_ProjectKB_Class10131] of  Property_List
+
+	(properties
+		[AIProject2pprj_ProjectKB_Class10132]
+		[AIProject2pprj_ProjectKB_Class10133]))
+
+([AIProject2pprj_ProjectKB_Class10132] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([AIProject2pprj_ProjectKB_Class10133] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([AIProject2pprj_ProjectKB_Class10181] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "AIProject2pprj_Class10003")
+	(property_list [AIProject2pprj_ProjectKB_Class10182])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([AIProject2pprj_ProjectKB_Class10182] of  Property_List
+)
+
+([AIProject2pprj_ProjectKB_Class10183] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "AIProject2pprj_Class10003")
+	(property_list [AIProject2pprj_ProjectKB_Class10184])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([AIProject2pprj_ProjectKB_Class10184] of  Property_List
+)
+
+([AIProject2pprj_ProjectKB_Class10185] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "AIProject2pprj_Class10003")
+	(property_list [AIProject2pprj_ProjectKB_Class10186])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([AIProject2pprj_ProjectKB_Class10186] of  Property_List
+)
+
+([AIProject2pprj_ProjectKB_Class10187] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "AIProject2pprj_Class10003")
+	(property_list [AIProject2pprj_ProjectKB_Class10188])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([AIProject2pprj_ProjectKB_Class10188] of  Property_List
+)
+
+([AIProject2pprj_ProjectKB_Class10189] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "AIProject2pprj_Class10003")
+	(property_list [AIProject2pprj_ProjectKB_Class10190])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([AIProject2pprj_ProjectKB_Class10190] of  Property_List
+
+	(properties
+		[AIProject2pprj_ProjectKB_Class10191]
+		[AIProject2pprj_ProjectKB_Class10192]))
+
+([AIProject2pprj_ProjectKB_Class10191] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([AIProject2pprj_ProjectKB_Class10192] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([AIProject2pprj_ProjectKB_Class10193] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "AIProject2pprj_Class10003")
+	(property_list [AIProject2pprj_ProjectKB_Class10194])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([AIProject2pprj_ProjectKB_Class10194] of  Property_List
+
+	(properties
+		[AIProject2pprj_ProjectKB_Class10195]
+		[AIProject2pprj_ProjectKB_Class10196]))
+
+([AIProject2pprj_ProjectKB_Class10195] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([AIProject2pprj_ProjectKB_Class10196] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([AIProject2pprj_ProjectKB_Class10197] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "AIProject2pprj_Class10003")
+	(property_list [AIProject2pprj_ProjectKB_Class10198])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([AIProject2pprj_ProjectKB_Class10198] of  Property_List
+
+	(properties
+		[AIProject2pprj_ProjectKB_Class10199]
+		[AIProject2pprj_ProjectKB_Class10200]))
+
+([AIProject2pprj_ProjectKB_Class10199] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([AIProject2pprj_ProjectKB_Class10200] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([AIProject2pprj_ProjectKB_Class10201] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "AIProject2pprj_Class10003")
+	(property_list [AIProject2pprj_ProjectKB_Class10202])
+	(widget_class_name "edu.stanford.smi.protege.widget.InstanceFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([AIProject2pprj_ProjectKB_Class10202] of  Property_List
+
+	(properties
+		[AIProject2pprj_ProjectKB_Class10203]
+		[AIProject2pprj_ProjectKB_Class10204]))
+
+([AIProject2pprj_ProjectKB_Class10203] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-View References to Value"))
+
+([AIProject2pprj_ProjectKB_Class10204] of  Boolean
+
+	(boolean_value FALSE)
+	(name "ButtonDisplayed-Delete Instance"))
+
+([AIProject2pprj_ProjectKB_Class10205] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "AIProject2pprj_Class10004")
+	(property_list [AIProject2pprj_ProjectKB_Class10206])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 240))
+
+([AIProject2pprj_ProjectKB_Class10206] of  Property_List
+)
+
+([AIProject2pprj_ProjectKB_Class10207] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "AIProject2pprj_Class10004")
+	(property_list [AIProject2pprj_ProjectKB_Class10208])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([AIProject2pprj_ProjectKB_Class10208] of  Property_List
+)
+
+([AIProject2pprj_ProjectKB_Class10209] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "AIProject2pprj_Class10004")
+	(property_list [AIProject2pprj_ProjectKB_Class10210])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([AIProject2pprj_ProjectKB_Class10210] of  Property_List
+)
+
+([AIProject2pprj_ProjectKB_Class10211] of  Widget
+
+	(height 60)
+	(is_hidden FALSE)
+	(name "AIProject2pprj_Class10004")
+	(property_list [AIProject2pprj_ProjectKB_Class10212])
+	(widget_class_name "edu.stanford.smi.protege.widget.TextFieldWidget")
+	(width 200)
+	(x 0)
+	(y 180))
+
+([AIProject2pprj_ProjectKB_Class10212] of  Property_List
+)
+
+([AIProject2pprj_ProjectKB_Class10323] of  String
 
 	(name "CITY_ADDRESS")
 	(string_value "{loc_adr_}street{_st_}number{_num}"))
 
-([AIProject2pprj_ProjectKB_Class40] of  String
+([AIProject2pprj_ProjectKB_Class10324] of  String
+
+	(name "RESTAURANT")
+	(string_value "{rec_res_}nameOfTheService{_name_}typeOfTheService{_typ}"))
+
+([AIProject2pprj_ProjectKB_Class10325] of  String
+
+	(name "NIGHT_BUS")
+	(string_value "{pbt_st_nitbus_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10326] of  String
+
+	(name "PRIMARY")
+	(string_value "{prim_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10327] of  String
+
+	(name "TRAIN_STATION")
+	(string_value "{pbt_train_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10328] of  String
+
+	(name "APARTMENT")
+	(string_value "{apt_}address"))
+
+([AIProject2pprj_ProjectKB_Class10329] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([AIProject2pprj_ProjectKB_Class10330] of  String
+
+	(name "UNIVERSITY")
+	(string_value "{uni_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10331] of  String
+
+	(name "SHOPS")
+	(string_value "{shp_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10332] of  String
+
+	(name "SHOPPING_CENTRE")
+	(string_value "{shp_sc_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10333] of  String
+
+	(name "GREEN_AREA")
+	(string_value "{srv_greenArea_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10334] of  String
+
+	(name "BAR")
+	(string_value "{rec_bar_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10335] of  String
+
+	(name "RECREATION")
+	(string_value "{rec_}nameOfTheService{_name_}typeOfTheService{_typ}"))
+
+([AIProject2pprj_ProjectKB_Class10336] of  String
+
+	(name "RESIDENTIAL")
+	(string_value "{res_}"))
+
+([AIProject2pprj_ProjectKB_Class10337] of  String
+
+	(name "SUPERMARKET")
+	(string_value "{shp_sm_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10338] of  String
+
+	(name "DETACHED")
+	(string_value "{hse_}address"))
+
+([AIProject2pprj_ProjectKB_Class10339] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([AIProject2pprj_ProjectKB_Class10340] of  String
+
+	(name "DUPLEX")
+	(string_value "{dup_}address"))
+
+([AIProject2pprj_ProjectKB_Class10341] of  String
+
+	(name "THEATER")
+	(string_value "{rec_thtr_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10342] of  String
+
+	(name "BICING")
+	(string_value "{pbt_rst_bicing_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10343] of  String
+
+	(name "HOSPITAL")
+	(string_value "{hos_health_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10344] of  String
+
+	(name "MUSEUM")
+	(string_value "{rec_nus_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10345] of  String
+
+	(name "FLAT")
+	(string_value "{res_apt_flt_}address"))
+
+([AIProject2pprj_ProjectKB_Class10346] of  String
+
+	(name "MINIMARKET")
+	(string_value "{shp_mm_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10347] of  String
+
+	(name "STADIUM")
+	(string_value "{rec_stad_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10348] of  String
+
+	(name "HOUSE")
+	(string_value "{hse_}"))
+
+([AIProject2pprj_ProjectKB_Class10349] of  String
+
+	(name "ATTIC")
+	(string_value "{att_}address"))
+
+([AIProject2pprj_ProjectKB_Class10350] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([AIProject2pprj_ProjectKB_Class10351] of  String
+
+	(name "Coordinates")
+	(string_value "{coord_}X_Coord{_x_}Y_Coord{_y}"))
+
+([AIProject2pprj_ProjectKB_Class10352] of  String
+
+	(name "SERVICES")
+	(string_value "{service_}nameOfTheService{_name_}typeOfTheService{_typ}"))
+
+([AIProject2pprj_ProjectKB_Class10353] of  String
+
+	(name "SEMI_DETACHED")
+	(string_value "{hse_}address"))
+
+([AIProject2pprj_ProjectKB_Class10354] of  String
+
+	(name "SCHOOL")
+	(string_value "{schl_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10355] of  String
+
+	(name "CLUB")
+	(string_value "{rec_club_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10356] of  String
+
+	(name "VILLA")
+	(string_value "{hse_}address"))
+
+([AIProject2pprj_ProjectKB_Class10357] of  String
+
+	(name "PUBLIC TRANSPORT")
+	(string_value "{pbTrnsp_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10358] of  String
+
+	(name "BUS")
+	(string_value "{pbt_st_bus_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10359] of  String
 
 	(name "ZOO")
 	(string_value "{rec_zoo_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class41] of  String
-
-	(name "PENTHOUSE")
-	(string_value "{apt_pent_}address"))
-
-([AIProject2pprj_ProjectKB_Class42] of  String
+([AIProject2pprj_ProjectKB_Class10360] of  String
 
 	(name "SECONDARY")
 	(string_value "{sec_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class43] of  String
+([AIProject2pprj_ProjectKB_Class10361] of  String
 
-	(name "MALL")
-	(string_value "{shp_mal_}nameOfTheService"))
+	(name "PENTHOUSE")
+	(string_value "{apt_pent_}address"))
 
-([AIProject2pprj_ProjectKB_Class44] of  String
+([AIProject2pprj_ProjectKB_Class10362] of  String
 
 	(name "STATION")
 	(string_value "{station_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class45] of  String
+([AIProject2pprj_ProjectKB_Class10363] of  String
+
+	(name "MALL")
+	(string_value "{shp_mal_}nameOfTheService"))
+
+([AIProject2pprj_ProjectKB_Class10364] of  String
 
 	(name "RENTAL_OFFER")
 	(string_value "{off_}residentialOffer"))
 
-([AIProject2pprj_ProjectKB_Class46] of  String
+([AIProject2pprj_ProjectKB_Class10365] of  String
 
 	(name "HEALTH")
 	(string_value "{health_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class47] of  String
+([AIProject2pprj_ProjectKB_Class10366] of  String
 
 	(name "TUBE")
 	(string_value "{pbt_st_tube_}nameOfTheService"))
 
-([AIProject2pprj_ProjectKB_Class48] of  Map_Entry
+([AIProject2pprj_ProjectKB_Class10367] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([AIProject2pprj_ProjectKB_Class49] of  Map_Entry
+([AIProject2pprj_ProjectKB_Class10368] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([AIProject2pprj_ProjectKB_Class5] of  String
-
-	(name "RESTAURANT")
-	(string_value "{rec_res_}nameOfTheService"))
-
-([AIProject2pprj_ProjectKB_Class50] of  Map_Entry
+([AIProject2pprj_ProjectKB_Class10369] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
-
-([AIProject2pprj_ProjectKB_Class6] of  String
-
-	(name "NIGHT_BUS")
-	(string_value "{pbt_st_nitbus_}nameOfTheService"))
-
-([AIProject2pprj_ProjectKB_Class7] of  String
-
-	(name "PRIMARY")
-	(string_value "{prim_}nameOfTheService"))
-
-([AIProject2pprj_ProjectKB_Class8] of  String
-
-	(name "TRAIN_STATION")
-	(string_value "{pbt_train_}nameOfTheService"))
-
-([AIProject2pprj_ProjectKB_Class9] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
 
 ([ANNOTATED_INSTANCE_WIDGET] of  Widget
 
@@ -589,50 +1081,50 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[AIProject2pprj_ProjectKB_Class4]
-		[AIProject2pprj_ProjectKB_Class5]
-		[AIProject2pprj_ProjectKB_Class6]
-		[AIProject2pprj_ProjectKB_Class7]
-		[AIProject2pprj_ProjectKB_Class8]
-		[AIProject2pprj_ProjectKB_Class9]
-		[AIProject2pprj_ProjectKB_Class10]
-		[AIProject2pprj_ProjectKB_Class11]
-		[AIProject2pprj_ProjectKB_Class12]
-		[AIProject2pprj_ProjectKB_Class13]
-		[AIProject2pprj_ProjectKB_Class14]
-		[AIProject2pprj_ProjectKB_Class15]
-		[AIProject2pprj_ProjectKB_Class16]
-		[AIProject2pprj_ProjectKB_Class17]
-		[AIProject2pprj_ProjectKB_Class18]
-		[AIProject2pprj_ProjectKB_Class19]
-		[AIProject2pprj_ProjectKB_Class20]
-		[AIProject2pprj_ProjectKB_Class21]
-		[AIProject2pprj_ProjectKB_Class22]
-		[AIProject2pprj_ProjectKB_Class23]
-		[AIProject2pprj_ProjectKB_Class24]
-		[AIProject2pprj_ProjectKB_Class25]
-		[AIProject2pprj_ProjectKB_Class26]
-		[AIProject2pprj_ProjectKB_Class27]
-		[AIProject2pprj_ProjectKB_Class28]
-		[AIProject2pprj_ProjectKB_Class29]
-		[AIProject2pprj_ProjectKB_Class30]
-		[AIProject2pprj_ProjectKB_Class31]
-		[AIProject2pprj_ProjectKB_Class32]
-		[AIProject2pprj_ProjectKB_Class33]
-		[AIProject2pprj_ProjectKB_Class34]
-		[AIProject2pprj_ProjectKB_Class35]
-		[AIProject2pprj_ProjectKB_Class36]
-		[AIProject2pprj_ProjectKB_Class37]
-		[AIProject2pprj_ProjectKB_Class38]
-		[AIProject2pprj_ProjectKB_Class39]
-		[AIProject2pprj_ProjectKB_Class40]
-		[AIProject2pprj_ProjectKB_Class41]
-		[AIProject2pprj_ProjectKB_Class42]
-		[AIProject2pprj_ProjectKB_Class43]
-		[AIProject2pprj_ProjectKB_Class44]
-		[AIProject2pprj_ProjectKB_Class45]
-		[AIProject2pprj_ProjectKB_Class46]
-		[AIProject2pprj_ProjectKB_Class47]))
+		[AIProject2pprj_ProjectKB_Class10323]
+		[AIProject2pprj_ProjectKB_Class10324]
+		[AIProject2pprj_ProjectKB_Class10325]
+		[AIProject2pprj_ProjectKB_Class10326]
+		[AIProject2pprj_ProjectKB_Class10327]
+		[AIProject2pprj_ProjectKB_Class10328]
+		[AIProject2pprj_ProjectKB_Class10329]
+		[AIProject2pprj_ProjectKB_Class10330]
+		[AIProject2pprj_ProjectKB_Class10331]
+		[AIProject2pprj_ProjectKB_Class10332]
+		[AIProject2pprj_ProjectKB_Class10333]
+		[AIProject2pprj_ProjectKB_Class10334]
+		[AIProject2pprj_ProjectKB_Class10335]
+		[AIProject2pprj_ProjectKB_Class10336]
+		[AIProject2pprj_ProjectKB_Class10337]
+		[AIProject2pprj_ProjectKB_Class10338]
+		[AIProject2pprj_ProjectKB_Class10339]
+		[AIProject2pprj_ProjectKB_Class10340]
+		[AIProject2pprj_ProjectKB_Class10341]
+		[AIProject2pprj_ProjectKB_Class10342]
+		[AIProject2pprj_ProjectKB_Class10343]
+		[AIProject2pprj_ProjectKB_Class10344]
+		[AIProject2pprj_ProjectKB_Class10345]
+		[AIProject2pprj_ProjectKB_Class10346]
+		[AIProject2pprj_ProjectKB_Class10347]
+		[AIProject2pprj_ProjectKB_Class10348]
+		[AIProject2pprj_ProjectKB_Class10349]
+		[AIProject2pprj_ProjectKB_Class10350]
+		[AIProject2pprj_ProjectKB_Class10351]
+		[AIProject2pprj_ProjectKB_Class10352]
+		[AIProject2pprj_ProjectKB_Class10353]
+		[AIProject2pprj_ProjectKB_Class10354]
+		[AIProject2pprj_ProjectKB_Class10355]
+		[AIProject2pprj_ProjectKB_Class10356]
+		[AIProject2pprj_ProjectKB_Class10357]
+		[AIProject2pprj_ProjectKB_Class10358]
+		[AIProject2pprj_ProjectKB_Class10359]
+		[AIProject2pprj_ProjectKB_Class10360]
+		[AIProject2pprj_ProjectKB_Class10361]
+		[AIProject2pprj_ProjectKB_Class10362]
+		[AIProject2pprj_ProjectKB_Class10363]
+		[AIProject2pprj_ProjectKB_Class10364]
+		[AIProject2pprj_ProjectKB_Class10365]
+		[AIProject2pprj_ProjectKB_Class10366]))
 
 ([CLSES_TAB] of  Widget
 
@@ -684,9 +1176,9 @@
 ([KB_120621_Class1] of  Map
 
 	(entries
-		[AIProject2pprj_ProjectKB_Class48]
-		[AIProject2pprj_ProjectKB_Class49]
-		[AIProject2pprj_ProjectKB_Class50]))
+		[AIProject2pprj_ProjectKB_Class10367]
+		[AIProject2pprj_ProjectKB_Class10368]
+		[AIProject2pprj_ProjectKB_Class10369]))
 
 ([KB_120621_Class75] of  Property_List
 
@@ -780,7 +1272,7 @@
 	(name "instances_file_name")
 	(string_value "AIProject2pprj.pins"))
 
-([KB_445198_Class3] of  Map
+([KB_872981_Class3] of  Map
 )
 
 ([LAYOUT_PROPERTIES] of  Property_List
@@ -867,8 +1359,8 @@
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[STANDARD_SLOT_FORM_WIDGET]
 		[STANDARD_FACET_FORM_WIDGET]
+		[STANDARD_SLOT_FORM_WIDGET]
 		[PAL_FORM_WIDGET]
 		[STANDARD_CLASS_FORM_WIDGET])
 	(default_cls_metaclass ":STANDARD-CLASS")
