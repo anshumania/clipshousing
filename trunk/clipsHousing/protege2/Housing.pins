@@ -1,0 +1,133 @@
+; Wed Dec 30 21:08:20 CET 2009
+; 
+;+ (version "3.4.1")
+;+ (build "Build 537")
+
+([AI2project_Class30005] of  CITY_ADDRESS
+
+	(locCoordinates [AI2project_Class30008]))
+
+([AI2project_Class30008] of  Coordinates
+
+	(X_Coord 20.0)
+	(Y_Coord 30.0))
+
+([AI2project_Class30013] of  CITY_ADDRESS
+
+	(locCoordinates [AI2project_Class30014]))
+
+([AI2project_Class30014] of  Coordinates
+
+	(X_Coord 40.0)
+	(Y_Coord 20.0))
+
+([AI2project_Class30015] of  CITY_ADDRESS
+
+	(locCoordinates [AI2project_Class30016]))
+
+([AI2project_Class30016] of  Coordinates
+
+	(X_Coord 50.0)
+	(Y_Coord 50.0))
+
+([AIProject2pprj_Class0] of  CITY_ADDRESS
+
+	(locCoordinates [AIProject2pprj_Class1]))
+
+([AIProject2pprj_Class1] of  Coordinates
+
+	(X_Coord 123.0)
+	(Y_Coord 80.0))
+
+([AIProject2pprj_Class11] of  CITY_ADDRESS
+
+	(locCoordinates [AIProject2pprj_Class12]))
+
+([AIProject2pprj_Class12] of  Coordinates
+
+	(X_Coord 50.0)
+	(Y_Coord 98.0))
+
+([AIProject2pprj_Class14] of  CITY_ADDRESS
+
+	(locCoordinates [AIProject2pprj_Class15]))
+
+([AIProject2pprj_Class15] of  Coordinates
+
+	(X_Coord 30.0)
+	(Y_Coord 20.0))
+
+([AIProject2pprj_Class17] of  CITY_ADDRESS
+
+	(locCoordinates [AIProject2pprj_Class18]))
+
+([AIProject2pprj_Class18] of  Coordinates
+
+	(X_Coord 20.0)
+	(Y_Coord 120.0))
+
+([AIProject2pprj_Class20] of  CITY_ADDRESS
+
+	(locCoordinates [AIProject2pprj_Class21]))
+
+([AIProject2pprj_Class21] of  Coordinates
+
+	(X_Coord 15.0)
+	(Y_Coord 125.0))
+
+([AIProject2pprj_Class29] of  CITY_ADDRESS
+
+	(locCoordinates [AIProject2pprj_Class31]))
+
+([AIProject2pprj_Class31] of  Coordinates
+
+	(X_Coord 57.0)
+	(Y_Coord 59.0))
+
+([AIProject2pprj_Class33] of  CITY_ADDRESS
+
+	(locCoordinates [AIProject2pprj_Class34]))
+
+([AIProject2pprj_Class34] of  Coordinates
+
+	(X_Coord 45.0)
+	(Y_Coord 50.0))
+
+([AIProject2pprj_Class4] of  CITY_ADDRESS
+
+	(locCoordinates [AIProject2pprj_Class5]))
+
+([AIProject2pprj_Class5] of  Coordinates
+
+	(X_Coord 123.0)
+	(Y_Coord 87.0))
+
+([AIProject2pprj_Class7] of  CITY_ADDRESS
+
+	(locCoordinates [AIProject2pprj_Class8]))
+
+([AIProject2pprj_Class8] of  Coordinates
+
+	(X_Coord 70.0)
+	(Y_Coord 50.0))
+
+([Housing_Class2] of  RESIDENTIAL
+
+	(address [AI2project_Class30005])
+	(area 100)
+	(furnishing semi)
+	(locAttribute posh)
+	(minimumRent 1200)
+	(numberOfBedrooms 5)
+	(parkingSpace TRUE)
+	(rent 1200)
+	(swimmingPool TRUE)
+	(typeOfResidency attic))
+
+([Housing_Class3] of  SERVICES
+
+	(nameOfTheService "bar")
+	(serviceLocation [AIProject2pprj_Class7])
+	(typeOfTheService bar)
+	(X_Coord 70.0)
+	(Y_Coord 50.0))
