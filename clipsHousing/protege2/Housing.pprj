@@ -1,4 +1,4 @@
-; Thu Dec 31 12:13:30 CET 2009
+; Thu Dec 31 13:42:27 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -348,14 +348,14 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
+		[Housing_ProjectKB_Class10092]
+		[Housing_ProjectKB_Class10093]
 		[Housing_ProjectKB_Class10094]
 		[Housing_ProjectKB_Class10095]
 		[Housing_ProjectKB_Class10096]
 		[Housing_ProjectKB_Class10097]
 		[Housing_ProjectKB_Class10098]
-		[Housing_ProjectKB_Class10099]
-		[Housing_ProjectKB_Class10100]
-		[Housing_ProjectKB_Class10101]))
+		[Housing_ProjectKB_Class10099]))
 
 ([CLSES_TAB] of  Widget
 
@@ -375,61 +375,61 @@
 	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
 
-([Housing_ProjectKB_Class10094] of  String
+([Housing_ProjectKB_Class10092] of  String
 
 	(name "CITY_ADDRESS")
 	(string_value "{adr_}locCoordinates"))
 
-([Housing_ProjectKB_Class10095] of  String
+([Housing_ProjectKB_Class10093] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([Housing_ProjectKB_Class10096] of  String
+([Housing_ProjectKB_Class10094] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([Housing_ProjectKB_Class10097] of  String
+([Housing_ProjectKB_Class10095] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([Housing_ProjectKB_Class10098] of  String
+([Housing_ProjectKB_Class10096] of  String
 
 	(name "Coordinates")
 	(string_value "{x_}X_Coord{_y_}Y_Coord"))
 
-([Housing_ProjectKB_Class10099] of  String
+([Housing_ProjectKB_Class10097] of  String
 
 	(name "SERVICES")
 	(string_value "{service_}nameOfTheService{_}typeOfTheService{_}serviceLocation"))
 
-([Housing_ProjectKB_Class10100] of  String
+([Housing_ProjectKB_Class10098] of  String
 
 	(name "RENTAL_OFFER")
 	(string_value "{rent_}rent{_rnt_}"))
 
-([Housing_ProjectKB_Class10101] of  String
+([Housing_ProjectKB_Class10099] of  String
 
 	(name "RESIDENTIAL")
 	(string_value "{res_}variant{_}address"))
 
-([Housing_ProjectKB_Class10102] of  Map_Entry
+([Housing_ProjectKB_Class10100] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([Housing_ProjectKB_Class10103] of  Map_Entry
+([Housing_ProjectKB_Class10101] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([Housing_ProjectKB_Class10104] of  Map_Entry
+([Housing_ProjectKB_Class10102] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
@@ -460,6 +460,9 @@
 	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
 
+([KB_105384_Class3] of  Map
+)
+
 ([KB_120621_Class0] of  String
 
 	(name "factory_class_name")
@@ -468,9 +471,9 @@
 ([KB_120621_Class1] of  Map
 
 	(entries
-		[Housing_ProjectKB_Class10102]
-		[Housing_ProjectKB_Class10103]
-		[Housing_ProjectKB_Class10104]))
+		[Housing_ProjectKB_Class10100]
+		[Housing_ProjectKB_Class10101]
+		[Housing_ProjectKB_Class10102]))
 
 ([KB_120621_Class75] of  Property_List
 
@@ -563,9 +566,6 @@
 
 	(name "instances_file_name")
 	(string_value "Housing.pins"))
-
-([KB_516107_Class3] of  Map
-)
 
 ([LAYOUT_PROPERTIES] of  Property_List
 
