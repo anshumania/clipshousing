@@ -280,7 +280,7 @@
     ; an instance of a Recommendation
 	    (do-for-all-instances ((?offer RESIDENTIAL))
 		     ;do-for condition
-	(printout t "--------------------makingInstance-------------------------------------------------" crlf)
+;	(printout t "--------------------makingInstance-------------------------------------------------" crlf)
 
 		     ;do-for execution
 	 (make-instance of Recommendation (residential ?offer)(recoScore 0)(recommendationCharacteristics "")(recommendationUserPrefs "")(recommendationLevel ""))
@@ -362,7 +362,7 @@
 )
 
 ; Determine daily routines
-(defrule determine-daily-routine "Determines the daily routine of a person"
+(defrule determine-shop-routine "Determines the shopping routine of a person"
    (profiled-user age ?)
    (profiled-user modeOfTransport ?)
    (profiled-user watchLiveMatches ?)
@@ -380,7 +380,7 @@
    else 
        (assert (profiled-user shoppingMode miniMarket))
   )
-  (modify ?profiler(currentState "DETERMINEDDAILYROUTINE"))
+  (modify ?profiler(currentState "DETERMINEDSHOPROUTINE"))
 )
 
 ; Determine the budget of the profiled user
@@ -388,7 +388,7 @@
         (profiled-user age ?)
         (profiled-user modeOfTransport ?)
         (not (profiled-user budget ?))
-	?profiler <- (profiler (user_profile ?user)(currentState "DETERMINEDDAILYROUTINE"))
+	?profiler <- (profiler (user_profile ?user)(currentState "DETERMINEDSHOPROUTINE"))
 
 	=>
 
@@ -608,7 +608,7 @@
  	      	     (send ?recommendation put-recommendationCharacteristics (str-cat ?reco "RENT within BUDGET. "))
 		     (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 10))
 
-		  (printout t "SCORE FOR BUDGET --- " (send ?recommendation get-recoScore) crlf)
+		 ;; (printout t "SCORE FOR BUDGET --- " (send ?recommendation get-recoScore) crlf)
 ;   (send (send ?recommendation get-residential) put-recommendationCharacteristics 
 ;			(str-cat (send (send ?recommendation get-residential) get-recommendationCharacteristics) "Rent is in BUDGET."))
 
@@ -628,8 +628,9 @@
    (profiled-user weekendActivity ?activity)
    (profiled-user watchLiveMatches ?watchLiveMatches)
    (profiled-user university ?university)
+   (profiled-user shoppingMode ?shop)
    =>
-;;(printout t "--------------------factProfiler-------------------------------------------------" crlf)
+;(printout t "--------------------factProfiler-------------------------------------------------" crlf)
 
   ; find the type of service
   (bind ?serviceType (send ?service get-typeOfTheService))
@@ -639,11 +640,12 @@
   (bind ?serviceName (send ?service get-nameOfTheService))
   ;;(printout t "serviceName " ?serviceName crlf)
 
+  
 
   ; calculate the distance of the service
   (bind ?distance (calculate-distance (send (send ?recommendation get-residential) get-address) 
 		(send ?service get-serviceLocation)))
-  (format t "distance of %s,%d%n" ?serviceName ?distance)
+;  (format t "distance of %s,%d%n" ?serviceName ?distance)
 
   ;find the NEARNESS distance of the service
   (bind ?nearness (compare-distance ?distance))
@@ -706,7 +708,16 @@
    (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) ?bonus))
   )
 
-
+  ; the service is a shop and is the mode of shopping the user prefers
+;   (printout t " ---- " ?serviceName  ?shop "are equal ?" crlf)
+;   (if(eq ?serviceName ?shop)
+   (if(=( str-compare ?serviceName ?shop)0 )
+    then
+  ;(printout t " ---- " ?serviceName  ?shop "are equal")
+   (send ?recommendation put-recommendationCharacteristics (str-cat ?reco ?serviceName " IS " ?nearness ". "))
+   (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) ?bonus))
+   )
+  
 
   ;the user is a fan of the AnyWhereTownClub ! (max +5)
   (and(=( str-compare ?serviceName "stadium")0 ) (not(= (str-compare ?watchLiveMatches "none") 0 ))
@@ -757,12 +768,12 @@
 
    ; profile the user to the rental offer
   (bind ?reco (send ?recommendation get-recommendationUserPrefs))
-  (printout t "recommendationUSERPREFS" ?reco crlf)
+ ; (printout t "recommendationUSERPREFS" ?reco crlf)
 
   ; the homeType is of the user's preference (max +5)
   (if(eq ?offerType ?type) 
   then
-  (printout t "the flat is of " ?type crlf)
+  ;;(printout t "the flat is of " ?type crlf)
   ;(send ?recommendation put-recommendationUserPrefs (str-cat ?reco " IS of " ?type ". "))
   (bind ?reco (str-cat ?reco " IS of " ?type ". "))
   (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 5))
@@ -772,7 +783,7 @@
   ; has either 1 room for rent OR  >2 rooms for rent as per-user-prefernce (max +5)
   (or (and(eq ?rooms 2) ( >= ?roomsForRent 2 ))
       (and(eq ?rooms 1) ( = ?roomsForRent 1 ))
-  (printout t "Number for rooms on rent are equal to userPreference" crlf)
+  ;;(printout t "Number for rooms on rent are equal to userPreference" crlf)
 ;  (send ?recommendation put-recommendationUserPrefs (str-cat ?reco "Has requested rooms. "))
   (bind ?reco (str-cat ?reco "Has requested rooms. "))
   (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 5))
@@ -780,7 +791,7 @@
 
   ; the whole flat is on rent and the userPreference is that (max +5)
   (and(eq ?rooms 3) (= (str-compare ?offerFullFlat "TRUE") 0 )
-  (printout t "the full flat is for rent" crlf)
+  ;;(printout t "the full flat is for rent" crlf)
 ;  (send ?recommendation put-recommendationUserPrefs (str-cat ?reco " IS for full rent. "))
    (bind ?reco (str-cat ?reco "IS for full rent. "))
   (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 5))
@@ -789,7 +800,7 @@
   ; furnishing
   (if(eq ?furnishing ?furnished)
   then
-  (printout t "has specified funrishing" crlf)
+  ;;(printout t "has specified funrishing" crlf)
  ; (send ?recommendation put-recommendationUserPrefs (str-cat ?reco " IS " ?furnishing " furnished. "))
    (bind ?reco (str-cat ?reco "IS " ?furnishing " furnished. "))
   (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 5))
