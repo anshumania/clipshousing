@@ -533,7 +533,7 @@
   (profiled-user married ?)
   (profiled-user advanced ?)
  =>
-  (printout t "--------------------finishedAdvancedProfiling-------------------------------------------------" crlf)
+  ;;(printout t "--------------------finishedAdvancedProfiling-------------------------------------------------" crlf)
 
   (modify ?profiler(currentState "FINISHED"))
 )
@@ -579,7 +579,7 @@
    ?profiler <- (profiler (user_profile ?user)(currentState "FINISHED"))
    ?recommendation <- (object (is-a Recommendation))
    =>
-	(printout t "--------------------budgetFilter-------------------------------------------------" crlf)
+;;	(printout t "--------------------budgetFilter-------------------------------------------------" crlf)
    
 ;   (format t "Dear %s,%d%n" (send ?user get-firstName) (send ?user get-maxBudget))
 
@@ -629,15 +629,15 @@
    (profiled-user watchLiveMatches ?watchLiveMatches)
    (profiled-user university ?university)
    =>
-(printout t "--------------------factProfiler-------------------------------------------------" crlf)
+;;(printout t "--------------------factProfiler-------------------------------------------------" crlf)
 
   ; find the type of service
   (bind ?serviceType (send ?service get-typeOfTheService))
-  (printout t "serviceType " ?serviceType crlf)
+  ;;(printout t "serviceType " ?serviceType crlf)
 
   ; find the actual service
   (bind ?serviceName (send ?service get-nameOfTheService))
-  (printout t "serviceName " ?serviceName crlf)
+  ;;(printout t "serviceName " ?serviceName crlf)
 
 
   ; calculate the distance of the service
@@ -647,16 +647,16 @@
 
   ;find the NEARNESS distance of the service
   (bind ?nearness (compare-distance ?distance))
-  (printout t "nearness " ?nearness crlf)
+  ;;(printout t "nearness " ?nearness crlf)
 
   ;find the bonus for the NEARNESS
   (bind ?bonus (bonus-nearness ?nearness))
-  (printout t "bonus " ?bonus crlf)
+;;  (printout t "bonus " ?bonus crlf)
 
 
    ; profile the user to the service 
    (bind ?reco (send ?recommendation get-recommendationCharacteristics))
-   (printout t "SCORE FOR SERVICES --- " (send ?recommendation get-recoScore) crlf)
+   ;;(printout t "SCORE FOR SERVICES --- " (send ?recommendation get-recoScore) crlf)
  
   ; service is a public transport and user uses public transport  (max +5)
   (and(=( str-compare ?serviceType "publicTransport")0 ) (= (str-compare ?transport "public") 0 )
@@ -683,7 +683,7 @@
    
   ; the service is a green-area and the person is not young (middle-aged or elderly) (max +5)
   (and(=( str-compare ?serviceType "greenArea")0 ) (not(= (str-compare ?ageGroup "young") 0 ))
-  (printout t "the user should NOT BE YOUNG" ?ageGroup)
+  ;;(printout t "the user should NOT BE YOUNG" ?ageGroup)
   (send ?recommendation put-recommendationCharacteristics (str-cat ?reco ?serviceName " IS " ?nearness ". "))
   (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) ?bonus))
   )
@@ -734,26 +734,26 @@
 
   ; the type of the residency
   (bind ?offerType (send (send ?recommendation get-residential) get-type) )
-  (printout t "offerType" ?offerType crlf)
-  (printout t "homeType" ?type crlf)
+  ;;(printout t "offerType" ?offerType crlf)
+  ;;(printout t "homeType" ?type crlf)
   ; the full flat is for rent or not
   (bind ?offerFullFlat (send (send ?recommendation get-residential) get-fullFlatForRent) )
-  (printout t "offerfullflat" ?offerFullFlat crlf)
+  ;;(printout t "offerfullflat" ?offerFullFlat crlf)
   ; the number of rooms for rent
   (bind ?furnished (send (send ?recommendation get-residential) get-furnishing) )
-  (printout t "furnishing" ?furnished crlf)  
+  ;;(printout t "furnishing" ?furnished crlf)  
   ; the furnishing of the house
   (bind ?roomsForRent (send (send ?recommendation get-residential) get-roomsForRent) )
-  (printout t "roomsForRent" ?roomsForRent crlf)  
+  ;;(printout t "roomsForRent" ?roomsForRent crlf)  
   ; the furnishing of the house
   (bind ?tempOffer (send (send ?recommendation get-residential) get-temperatureControl) )
-  (printout t "roomsForRent" ?tempOffer crlf)  
+  ;;(printout t "roomsForRent" ?tempOffer crlf)  
   ;the swimmingPool
   (bind ?pool (send (send ?recommendation get-residential) get-swimmingPool) )
-  (printout t "swimmingPool" ?pool crlf)  
+  ;;(printout t "swimmingPool" ?pool crlf)  
   ;the view
   (bind ?offerView (send (send ?recommendation get-residential) get-view) )
-  (printout t "offerView" ?offerView crlf)  
+  ;;(printout t "offerView" ?offerView crlf)  
 
    ; profile the user to the rental offer
   (bind ?reco (send ?recommendation get-recommendationUserPrefs))
@@ -835,7 +835,7 @@
          (if(> 15 ?recoScore)
          then  (send ?recommendation put-recommendationLevel "PARTIALLY_ADEQUATE")
          else
-            (if (> 20 ?recoScore)
+            (if (> 30 ?recoScore)
               then (send ?recommendation put-recommendationLevel "ADEQUATE")
             else
                (send ?recommendation put-recommendationLevel "VERY_RECOMMENDABLE")
@@ -879,12 +879,19 @@
          
 	    (printout t (send ?recommendation print))
 ;	)
-	(modify ?profiler (currentState "TERMINATE"))
+;	(modify ?profiler (currentState "TERMINATE"))
 ;        (assert(doneIs TRUE))
 ;	(printout t "-------------------doneISTRUE-------------------------------------------------" crlf)
 	;;(pop-focus)
 )
 
+
+; finish filters
+(defrule completed-print "Rule to check that all have been printed "
+  ?profiler <- (profiler (user_profile ?user)(currentState "FINISHED"))
+ =>
+   (modify ?profiler(currentState "TERMINATE"))
+)
 
 ;---------------------------------------------
 ; Module to terminate the KBS
