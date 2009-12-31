@@ -1,86 +1,101 @@
 digraph AIProject2pprj {
 	node [label="\N"];
-	graph [bb="0,0,2530,300"];
-	CITY_ADDRESS [label=CITY_ADDRESS, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="253,194", width="1.6667", height="0.5"];
-	LOCATION [label=LOCATION, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="253,282", width="1.2222", height="0.5"];
-	RESTAURANT [label=RESTAURANT, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="55,106", width="1.5278", height="0.5"];
-	RECREATION [label=RECREATION, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="384,194", width="1.4722", height="0.5"];
-	NIGHT_BUS [label=NIGHT_BUS, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="872,18", width="1.3056", height="0.5"];
-	STATION [label=STATION, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1008,106", width="1.0556", height="0.5"];
-	PRIMARY [label=PRIMARY, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="674,106", width="1.1111", height="0.5"];
-	SCHOOL [label=SCHOOL, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="841,194", width="1.0278", height="0.5"];
-	TRAIN_STATION [label=TRAIN_STATION, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1128,106", width="1.7778", height="0.5"];
-	"PUBLIC TRANSPORT" [label="PUBLIC TRANSPORT", shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1128,194", width="2.1389", height="0.5"];
-	APARTMENT [label=APARTMENT, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1972,194", width="1.4167", height="0.5"];
-	RESIDENTIAL [label=RESIDENTIAL, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2097,282", width="1.4722", height="0.5"];
-	SHOPS [label=SHOPS, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1360,194", width="0.86111", height="0.5"];
-	SERVICES [label=SERVICES, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1244,282", width="1.1389", height="0.5"];
-	UNIVERSITY [label=UNIVERSITY, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="782,106", width="1.3889", height="0.5"];
-	SHOPPING_CENTRE [label=SHOPPING_CENTRE, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1284,106", width="2.0556", height="0.5"];
-	GREEN_AREA [label=GREEN_AREA, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1463,194", width="1.5", height="0.5"];
-	BAR [label=BAR, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="155,106", width="0.75", height="0.5"];
-	SUPERMARKET [label=SUPERMARKET, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1435,106", width="1.6389", height="0.5"];
-	DETACHED [label=DETACHED, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2131,106", width="1.25", height="0.5"];
-	HOUSE [label=HOUSE, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2223,194", width="0.86111", height="0.5"];
-	DUPLEX [label=DUPLEX, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1845,106", width="0.97222", height="0.5"];
-	THEATER [label=THEATER, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="240,106", width="1.1111", height="0.5"];
-	BICING [label=BICING, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="969,18", width="0.88889", height="0.5"];
-	HOSPITAL [label=HOSPITAL, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1750,106", width="1.1667", height="0.5"];
-	HEALTH [label=HEALTH, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1698,194", width="0.97222", height="0.5"];
-	MUSEUM [label=MUSEUM, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="336,106", width="1.0556", height="0.5"];
-	FLAT [label=FLAT, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1925,106", width="0.75", height="0.5"];
-	STADIUM [label=STADIUM, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="432,106", width="1.1111", height="0.5"];
-	MINIMARKET [label=MINIMARKET, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1565,106", width="1.4722", height="0.5"];
-	ATTIC [label=ATTIC, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2223,106", width="0.80556", height="0.5"];
-	Coordinates [label=Coordinates, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2210,282", width="1.1667", height="0.5"];
-	USER_PROFILE [label=USER_PROFILE, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2329,282", width="1.6389", height="0.5"];
-	SEMI_DETACHED [label=SEMI_DETACHED, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2335,106", width="1.8056", height="0.5"];
-	CLUB [label=CLUB, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="517,106", width="0.75", height="0.5"];
-	VILLA [label=VILLA, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2446,106", width="0.77778", height="0.5"];
-	BUS [label=BUS, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1046,18", width="0.75", height="0.5"];
-	ZOO [label=ZOO, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="589,106", width="0.75", height="0.5"];
-	PENTHOUSE [label=PENTHOUSE, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2019,106", width="1.3611", height="0.5"];
-	SECONDARY [label=SECONDARY, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="901,106", width="1.4167", height="0.5"];
-	MALL [label=MALL, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1663,106", width="0.75", height="0.5"];
-	RENTAL_OFFER [label=RENTAL_OFFER, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2468,282", width="1.7222", height="0.5"];
-	TUBE [label=TUBE, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1118,18", width="0.75", height="0.5"];
-	LOCATION -> CITY_ADDRESS [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,253,263.77 253,253.49 253,239.93 253,224.12 253,212.21", lp="261,238"];
-	RECREATION -> RESTAURANT [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,330.66,178.11 320.65,175.85 274.52,165.86 260.63,168.44 218,158 179.77,148.64 137.45,135.04 105.51,124.1", lp="226,150"];
-	STATION -> NIGHT_BUS [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,980.15,87.98 971.58,82.435 949.21,67.957 920.97,49.685 900.28,36.299", lp="961,62"];
-	SCHOOL -> PRIMARY [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,806.8,175.98 797.7,171.18 769.91,156.54 734.31,137.78 708.44,124.15", lp="781,150"];
-	"PUBLIC TRANSPORT" -> TRAIN_STATION [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1128,175.77 1128,165.49 1128,151.93 1128,136.12 1128,124.21", lp="1136,150"];
-	RESIDENTIAL -> APARTMENT [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2071.4,263.98 2063,258.05 2042.5,243.63 2016.8,225.57 1998,212.3", lp="2054,238"];
-	SERVICES -> SHOPS [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1267.8,263.98 1275.8,257.86 1294.8,243.47 1318.5,225.51 1335.9,212.3", lp="1321,238"];
-	SCHOOL -> UNIVERSITY [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,828.78,175.77 822.96,167.09 813.64,153.19 802.51,136.59 794.21,124.21", lp="825,150"];
-	SHOPS -> SHOPPING_CENTRE [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1344.3,175.77 1337.4,167.88 1325.3,153.82 1310.6,136.83 1299.7,124.21", lp="1337,150"];
-	SERVICES -> GREEN_AREA [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1285.2,265.45 1294.8,261.57 1332,246.63 1382,226.53 1417.8,212.15", lp="1382,238"];
-	RECREATION -> BAR [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,330.83,176.84 320.9,173.48 282.79,160.51 233.53,142.7 191,124 188.19,122.76 185.28,121.42 182.38,120.04", lp="283,150"];
-	SERVICES -> RECREATION [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1202.8,277.79 1192.8,276.76 1040.5,261.18 591.71,215.25 437.07,199.43", lp="900,238"];
-	SHOPS -> SUPERMARKET [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1375.5,175.77 1382.3,167.88 1394.2,153.82 1408.7,136.83 1419.5,124.21", lp="1413,150"];
-	HOUSE -> DETACHED [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2203.9,175.77 2196.5,168.67 2181.7,154.46 2163.5,137.07 2150,124.21", lp="2194,150"];
-	APARTMENT -> DUPLEX [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1946,175.98 1937.7,170.24 1916.9,155.8 1890.6,137.63 1871.4,124.3", lp="1928,150"];
-	RECREATION -> THEATER [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,354.51,175.98 345.75,170.63 322.01,156.12 291.94,137.74 269.94,124.3", lp="333,150"];
-	STATION -> BICING [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,999.92,87.766 995.72,78.295 989.63,64.56 982.45,48.358 977.07,36.21", lp="1000,62"];
-	HEALTH -> HOSPITAL [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1708.8,175.77 1713.9,167.09 1722.1,153.19 1731.9,136.59 1739.2,124.21", lp="1737,150"];
-	RECREATION -> MUSEUM [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,374.05,175.77 369.11,166.69 361.57,152.87 352.62,136.48 345.93,124.21", lp="373,150"];
-	APARTMENT -> FLAT [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1962.3,175.77 1957.4,166.69 1950,152.87 1941.3,136.48 1934.7,124.21", lp="1961,150"];
-	RECREATION -> STADIUM [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,393.95,175.77 398.89,166.69 406.43,152.87 415.38,136.48 422.07,124.21", lp="421,150"];
-	SHOPS -> MINIMARKET [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1391.4,179.79 1400.7,175.72 1447.1,155.52 1490.5,137.14 1521.8,124.02", lp="1485,150"];
-	RESIDENTIAL -> HOUSE [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2122.8,263.98 2131,258.24 2151.7,243.8 2177.7,225.63 2196.8,212.3", lp="2180,238"];
-	HOUSE -> ATTIC [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2223,175.77 2223,165.49 2223,151.93 2223,136.12 2223,124.21", lp="2231,150"];
-	HOUSE -> SEMI_DETACHED [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2245.9,175.98 2254,169.66 2272.2,155.31 2295,137.45 2311.7,124.3", lp="2298,150"];
-	SERVICES -> SCHOOL [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1202.8,273 1192.9,270.84 1110.5,252.85 950.39,217.89 878.05,202.09", lp="1087,238"];
-	RECREATION -> CLUB [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,411.24,175.98 419.67,170.4 441.71,155.82 469.55,137.4 489.8,124", lp="471,150"];
-	HOUSE -> VILLA [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2254.3,183.23 2264,179.82 2301.9,166.38 2359.8,145.16 2409,124 2411.9,122.76 2414.9,121.41 2417.8,120.03", lp="2372,150"];
-	SERVICES -> "PUBLIC TRANSPORT" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1220.2,263.98 1212.2,257.86 1193.2,243.47 1169.5,225.51 1152.1,212.3", lp="1205,238"];
-	STATION -> BUS [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1015.9,87.766 1020,78.295 1025.9,64.56 1032.9,48.358 1038.1,36.21", lp="1039,62"];
-	RECREATION -> ZOO [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,436.8,175.94 446.47,172.4 458.67,167.86 471.31,162.95 483,158 514.85,144.52 521.98,139.29 553,124 555.88,122.58 558.89,121.09 \
-561.89,119.6", lp="526,150"];
-	APARTMENT -> PENTHOUSE [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1981.7,175.77 1986.6,166.69 1994,152.87 2002.7,136.48 2009.3,124.21", lp="2008,150"];
-	SCHOOL -> SECONDARY [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,853.43,175.77 859.08,167.49 868.61,153.51 880.06,136.71 888.58,124.21", lp="885,150"];
-	SHOPS -> MALL [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1391.2,179.12 1400.8,176.16 1443.6,163.46 1457,166.92 1497,158 1555.3,144.99 1571.1,145.02 1627,124 1629.9,122.92 1632.8,121.68\
- 1635.7,120.36", lp="1578,150"];
-	"PUBLIC TRANSPORT" -> STATION [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1103.4,175.98 1095.3,170.05 1075.7,155.63 1051,137.57 1033,124.3", lp="1087,150"];
-	SERVICES -> HEALTH [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1285.1,274.04 1295.1,272.09 1388.1,254.06 1582.9,216.31 1662.7,200.84", lp="1520,238"];
-	STATION -> TUBE [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1030.5,87.98 1038.4,81.663 1056.4,67.312 1078.7,49.448 1095.1,36.299", lp="1081,62"];
+	graph [bb="0,0,2754,996"];
+	CITY_ADDRESS [label="{CITY_ADDRESS|{number|Integer}|{street|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="397,311", rects="337,323,457,347 337,299,399,323 399,299,457,323 337,275,395,299 395,275,457,299", width="1.6667", height="1.0139"];
+	LOCATION [label="{LOCATION|{locAttribute|Symbol|{posh|happening|classy|...}}|{locCoordinates|Instance|{Coordinates}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="141,593", rects="16.5,641,265.5,665 16.5,545,109.5,641 109.5,545,180.5,641 180.5,617,265.5,641 180.5,593,265.5,617 180.5,569,265.5,593 180.5,545,\
+265.5,569 16.5,521,118.5,545 118.5,521,181.5,545 181.5,521,265.5,545", width="3.4444", height="2.0139"];
+	RESTAURANT [label="{RESTAURANT|{restaurantType|Symbol|{indian|chinese|italian|...}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1404,149", rects="1296,185,1512,209 1296,89,1395,185 1395,89,1455,185 1455,161,1512,185 1455,137,1512,161 1455,113,1512,137 1455,89,1512,113", width=3, height="1.6806"];
+	RECREATION [label=RECREATION, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1215,311", width="1.4444", height="0.5"];
+	NIGHT_BUS [label=NIGHT_BUS, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1982,18", width="1.3056", height="0.5"];
+	STATION [label=STATION, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2118,149", width="1.0556", height="0.5"];
+	PRIMARY [label=PRIMARY, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1762,149", width="1.1111", height="0.5"];
+	SCHOOL [label=SCHOOL, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1815,311", width=1, height="0.5"];
+	TRAIN_STATION [label=TRAIN_STATION, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1999,149", width="1.75", height="0.5"];
+	"PUBLIC TRANSPORT" [label="PUBLIC TRANSPORT", shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2038,311", width="2.1111", height="0.5"];
+	APARTMENT [label="{APARTMENT|{balcony|Boolean}|{petsAllowed|Boolean}|{floor|Integer}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="553,311", rects="479,335,627,359 479,311,552,335 552,311,627,335 479,287,565,311 565,287,627,311 479,263,547,287 547,263,627,287", width="2.0556", height="1.3472"];
+	RESIDENTIAL [label="{RESIDENTIAL|{sunlight|Symbol|{all_day|morning|afternoon|...}}|{furnishing|Symbol|{semi|full|none}}|{swimmingPool|Boolean}|{view\
+|Symbol|{city|sea|garden|...}}|{area|Integer}|{...}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="397,593", rects="303,749,491,773 303,653,362,749 362,653,422,749 422,725,491,749 422,701,491,725 422,677,491,701 422,653,491,677 303,581,378,653 \
+378,581,443,653 443,629,491,653 443,605,491,629 443,581,491,605 303,557,415,581 415,557,491,581 303,461,355,557 355,461,426,557 \
+426,533,491,557 426,509,491,533 426,485,491,509 426,461,491,485 303,437,389,461 389,437,491,461 303,413,491,437", width="2.6111", height="5.0139"];
+	UNIVERSITY [label=UNIVERSITY, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1869,149", width="1.3611", height="0.5"];
+	SHOPS [label=SHOPS, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2297,311", width="0.83333", height="0.5"];
+	SERVICES [label="{SERVICES|{serviceLocation|Instance|{CITY_ADDRESS}}|{typeOfTheService|String}|{nameOfTheService|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2038,593", rects="1894,617,2182,641 1894,593,1999,617 1999,593,2062,617 2062,593,2182,617 1894,569,2072,593 2072,569,2182,593 1894,545,2075,569 2075\
+,545,2182,569", width=4, height="1.3472"];
+	SHOPPING_CENTRE [label=SHOPPING_CENTRE, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2578,149", width="2.0556", height="0.5"];
+	GREEN_AREA [label=GREEN_AREA, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2399,311", width="1.5", height="0.5"];
+	BAR [label=BAR, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1557,149", width="0.75", height="0.5"];
+	SUPERMARKET [label=SUPERMARKET, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2233,149", width="1.6389", height="0.5"];
+	DETACHED [label=DETACHED, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="343,149", width="1.25", height="0.5"];
+	HOUSE [label="{HOUSE|{terrace|Boolean}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="254,311", rects="196,311,312,335 196,287,250,311 250,287,312,311", width="1.6111", height="0.68056"];
+	DUPLEX [label="{DUPLEX|{floor2|Integer}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="458,149", rects="406,149,510,173 406,125,456,149 456,125,510,149", width="1.4444", height="0.68056"];
+	THEATER [label=THEATER, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="756,149", width="1.1111", height="0.5"];
+	BICING [label=BICING, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2079,18", width="0.88889", height="0.5"];
+	HOSPITAL [label=HOSPITAL, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2712,149", width="1.1667", height="0.5"];
+	HEALTH [label=HEALTH, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2609,311", width="0.97222", height="0.5"];
+	MUSEUM [label="{MUSEUM|{museumType|Symbol|{science|historical|art}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="923,149", rects="814,173,1032,197 814,101,906,173 906,101,966,173 966,149,1032,173 966,125,1032,149 966,101,1032,125", width="3.0278", height="1.3472"];
+	Coordinates [label="{Coordinates|{X_Coord|Float}|{Y_Coord|Float}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="121,311", rects="63.5,323,178.5,347 63.5,299,133.5,323 133.5,299,178.5,323 63.5,275,133.5,299 133.5,275,178.5,299", width="1.5833", height="1.0139"];
+	FLAT [label=FLAT, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="555,149", width="0.75", height="0.5"];
+	STADIUM [label="{STADIUM|{stat|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1092,149", rects="1049.5,149,1134.5,173 1049.5,125,1085.5,149 1085.5,125,1134.5,149", width="1.1667", height="0.68056"];
+	MINIMARKET [label=MINIMARKET, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2362,149", width="1.4444", height="0.5"];
+	ATTIC [label=ATTIC, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="29,149", width="0.80556", height="0.5"];
+	USER_PROFILE [label="{USER_PROFILE|{minBudget|Integer}|{secondName|String}|{maxBudget|Integer}|{firstName|String}|{age|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="646,911", rects="577,959,715,983 577,935,657,959 657,935,715,959 577,911,666,935 666,911,715,935 577,887,658,911 658,887,715,911 577,863,656,887 \
+656,863,715,887 577,839,639,863 639,839,715,863", width="1.9167", height="2.0139"];
+	SEMI_DETACHED [label=SEMI_DETACHED, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="141,149", width="1.8056", height="0.5"];
+	CLUB [label=CLUB, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1179,149", width="0.75", height="0.5"];
+	VILLA [label=VILLA, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="252,149", width="0.77778", height="0.5"];
+	BUS [label=BUS, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2156,18", width="0.75", height="0.5"];
+	ZOO [label=ZOO, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1251,149", width="0.75", height="0.5"];
+	SECONDARY [label=SECONDARY, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="1653,149", width="1.4167", height="0.5"];
+	PENTHOUSE [label=PENTHOUSE, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="649,149", width="1.3611", height="0.5"];
+	MALL [label=MALL, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2459,149", width="0.75", height="0.5"];
+	RENTAL_OFFER [label="{RENTAL_OFFER|{recommendationCharacteristics|String}|{rent|Integer}|{recomendationLevel|Symbol|{partially_adequate|adequate|very\
+_recommendable}}|{residentialOffer|Instance|{RESIDENTIAL}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="397,911", rects="234.5,971,559.5,995 234.5,947,468.5,971 468.5,947,559.5,971 234.5,923,388.5,947 388.5,923,559.5,947 234.5,851,363.5,923 363.5,851\
+,423.5,923 423.5,899,559.5,923 423.5,875,559.5,899 423.5,851,559.5,875 234.5,827,354.5,851 354.5,827,435.5,851 435.5,827,559.5,\
+851", width="4.5", height="2.3472"];
+	TUBE [label=TUBE, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="2228,18", width="0.75", height="0.5"];
+	LOCATION -> CITY_ADDRESS [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,169,520.76 173.28,511.62 194.75,466.74 226.95,413.16 270,378 288.62,362.8 299.42,370.58 321,360 328.75,356.2 336.68,351.77 344.35\
+,347.15", lp="277.5,386"];
+	RECREATION -> RESTAURANT [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1236.3,292.73 1244,286.18 1267.8,265.76 1302.6,235.94 1333.6,209.32", lp="1317.5,236"];
+	STATION -> NIGHT_BUS [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2105.9,130.97 2100,122.78 2091.8,111.54 2081.5,98.599 2071,88 2051.6,68.443 2026.8,49.341 2008.3,36.046", lp="2058.5,62"];
+	SCHOOL -> PRIMARY [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1809,292.73 1805.9,283.19 1795.1,250.1 1777.3,195.76 1768,167.45", lp="1799.5,236"];
+	"PUBLIC TRANSPORT" -> TRAIN_STATION [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2033.6,292.73 2031.2,282.77 2023.2,249.63 2010.2,195.64 2003.4,167.45", lp="2028.5,236"];
+	RESIDENTIAL -> APARTMENT [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,491.12,422.86 496.06,413.92 507.12,393.95 517.56,375.07 526.41,359.07", lp="523.5,386"];
+	SCHOOL -> UNIVERSITY [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1821.1,292.73 1824.3,283.19 1835.3,250.1 1853.4,195.76 1862.8,167.45", lp="1849.5,236"];
+	SERVICES -> SHOPS [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2082.2,544.84 2089.3,537.18 2148.5,472.7 2242.6,370.22 2280.4,329.02", lp="2242.5,386"];
+	SHOPS -> SHOPPING_CENTRE [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2307,292.99 2312.7,284.74 2319,276.31 2326.9,267.69 2336,262 2367.7,242.27 2382.5,255.59 2418,244 2453.6,232.38 2462.6,228.74 \
+2495,210 2516.8,197.37 2539.8,180.14 2556,167.22", lp="2468.5,236"];
+	SERVICES -> GREEN_AREA [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2099.6,544.84 2107.7,538.55 2190.1,474.16 2322.8,370.52 2375.9,329.02", lp="2319.5,386"];
+	SERVICES -> RECREATION [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1897.5,544.84 1887.8,541.53 1700.4,477.33 1389.8,370.9 1267.1,328.86", lp="1443.5,386"];
+	RECREATION -> BAR [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1267.2,305.14 1277.1,303.61 1343.7,292.92 1449.4,267.67 1521,210 1534.9,198.81 1544.6,180.73 1550.4,167.15", lp="1500.5,236"];
+	SHOPS -> SUPERMARKET [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2289.8,292.73 2286,283.19 2272.9,250.1 2251.5,195.76 2240.3,167.45", lp="2276.5,236"];
+	RESIDENTIAL -> CITY_ADDRESS [label=address, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,397,347.04 397,412.81 397,392.44 397,373.26 397,357.16", lp="419,386"];
+	HOUSE -> DETACHED [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,267.32,286.75 272.23,277.81 290.57,244.43 318.18,194.18 332.91,167.37", lp="306.5,236"];
+	APARTMENT -> DUPLEX [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,524.75,262.83 519.58,254.02 503.37,226.36 484.74,194.6 472.26,173.32", lp="519.5,236"];
+	RECREATION -> THEATER [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1162.9,308.74 1152.9,308 1068.2,301.3 914.28,279.71 805,210 788.28,199.33 774.69,180.99 766.1,167.2", lp="873.5,236"];
+	STATION -> BICING [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2112.6,130.79 2109.6,120.9 2102,95.209 2090.9,57.986 2084.4,36.06", lp="2101.5,62"];
+	HEALTH -> HOSPITAL [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2620.6,292.73 2626.1,284.05 2647.1,251.04 2682.1,196 2700.3,167.45", lp="2668.5,236"];
+	RECREATION -> MUSEUM [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1182.4,292.89 1173.4,287.93 1131,264.39 1063.8,227.14 1009.8,197.14", lp="1094.5,236"];
+	LOCATION -> Coordinates [label=locCoordinates, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,123.58,347.32 135.88,520.74 132.23,469.38 127.45,401.9 124.3,357.53", lp="170,386"];
+	APARTMENT -> FLAT [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,553.59,262.83 553.72,252.83 554.09,222.73 554.52,188.05 554.77,167.36", lp="561.5,236"];
+	RECREATION -> STADIUM [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1201.1,292.73 1194.9,284.59 1171.5,253.74 1133.1,203.13 1110.4,173.25", lp="1168.5,236"];
+	SHOPS -> MINIMARKET [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2304.3,292.73 2308.2,283.19 2321.4,250.1 2343.2,195.76 2354.6,167.45", lp="2337.5,236"];
+	RESIDENTIAL -> HOUSE [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,305.63,412.81 300.94,403.56 287.25,376.56 274.93,352.27 266.35,335.35", lp="300.5,386"];
+	HOUSE -> ATTIC [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,223.95,286.82 215.78,280.81 206.61,274.2 196.67,267.54 187,262 136.56,233.11 111.03,247.94 67,210 53.39,198.27 43.067,180.44 36.641\
+,167.08", lp="150.5,236"];
+	SERVICES -> CITY_ADDRESS [label=serviceLocation, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,444.43,347.13 1893.8,575.25 1531.3,530.13 601.78,411.01 470,360 464.44,357.85 458.87,355.21 453.43,352.28", lp="649.5,386"];
+	HOUSE -> SEMI_DETACHED [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,237.08,286.75 231.15,278.24 207.87,244.86 172.59,194.29 153.82,167.37", lp="212.5,236"];
+	SERVICES -> SCHOOL [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1999.9,544.84 1993.5,536.78 1942.5,472.28 1861.8,370.14 1829.3,329.02", lp="1882.5,386"];
+	RECREATION -> CLUB [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1210.9,292.73 1208.7,282.77 1201.4,249.63 1189.4,195.64 1183.1,167.45", lp="1207.5,236"];
+	SERVICES -> "PUBLIC TRANSPORT" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2038,544.84 2038,534.8 2038,470.21 2038,369.72 2038,329.02", lp="2045.5,386"];
+	HOUSE -> VILLA [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,253.7,286.75 253.57,276.52 253.16,243.15 252.55,193.83 252.23,167.37", lp="261.5,236"];
+	STATION -> BUS [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2123.3,130.79 2126.2,120.9 2133.6,95.209 2144.4,57.986 2150.8,36.06", lp="2152.5,62"];
+	RECREATION -> ZOO [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1219.1,292.73 1221.3,282.77 1228.6,249.63 1240.6,195.64 1246.9,167.45", lp="1240.5,236"];
+	SCHOOL -> SECONDARY [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,1796.5,292.83 1789.3,285.75 1768.6,265.38 1738.9,235.94 1713,210 1698.7,195.69 1682.7,179.37 1670.8,167.21", lp="1754.5,236"];
+	APARTMENT -> PENTHOUSE [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,581.54,262.83 586.78,254 604.77,223.64 625.7,188.32 638.12,167.36", lp="608.5,236"];
+	SHOPS -> MALL [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2309,292.9 2315.1,284.68 2321.2,276.86 2328.4,268.62 2336,262 2369.9,232.34 2391.2,241.94 2423,210 2435.3,197.62 2445,180.2 2451.3\
+,167.15", lp="2406.5,236"];
+	"PUBLIC TRANSPORT" -> STATION [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2047,292.73 2051.5,283.62 2067.8,250.57 2094.8,195.88 2108.9,167.45", lp="2085.5,236"];
+	RENTAL_OFFER -> RESIDENTIAL [label=residentialOffer, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", style=filled, pos="e,397,773.14 397,826.62 397,813.01 397,798.46 397,783.53", lp="440,800"];
+	SERVICES -> HEALTH [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2135.5,544.84 2144.8,540.27 2275.5,475.7 2489.9,369.82 2573.8,328.39", lp="2479.5,386"];
+	STATION -> TUBE [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,2131.4,130.83 2137.7,122.56 2145.9,111.71 2155.7,99.103 2165,88 2180.1,69.912 2198.1,50.024 2211,36.085", lp="2201.5,62"];
 }
