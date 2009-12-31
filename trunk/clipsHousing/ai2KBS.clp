@@ -1,4 +1,4 @@
-; Mon Dec 28 23:45:03 CET 2009
+; Thu Dec 31 05:51:45 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -11,17 +11,9 @@
 		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot secondName
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot rent
 		(type INTEGER)
 ;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot AI2project_Class20011
-		(type STRING)
-;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot AI2project_Class20012
 		(type STRING)
@@ -30,14 +22,6 @@
 	(single-slot AI2project_Class20018
 ;+		(comment "is the second floor of the duplex flat")
 		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot numberOfBedrooms
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot maxBudget
-		(type INTEGER)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot floor
@@ -49,35 +33,12 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot sunlight
-;+		(comment "Additional attribute about the sunlight recieved by this residency.")
-		(type SYMBOL)
-		(allowed-values all_day morning afternoon evening)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot number
 ;+		(comment "Identifies the number on the street which this address is.")
 		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot stationLocation
-		(type INSTANCE)
-;+		(allowed-classes LOCATION)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot locAttribute
-;+		(comment "This slot helps determine the area's general attribute")
-		(type SYMBOL)
-		(allowed-values posh happening classy downtown moderate)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot floor2
-;+		(comment "A duplex exists in two floors. This is the value of the second floor.")
-		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot recommendationCharacteristics
-;+		(comment "The criteria which have lead to the recommendation level")
+	(single-slot Housing_Class1
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
@@ -96,19 +57,27 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot trainStationAddress
-		(type INSTANCE)
-;+		(allowed-classes CITY_ADDRESS)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot street
 ;+		(comment "Identifies the street in the City where this address is")
 		(type STRING)
-;+		(cardinality 1 1)
+;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot nameOfTheService
 ;+		(comment "Identifier for the Service")
 		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot roomsForRent
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot serviceLocation
+		(type INSTANCE)
+;+		(allowed-classes CITY_ADDRESS)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot totalBedrooms
+		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot Y_Coord
@@ -116,25 +85,10 @@
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot temperatureControl
-;+		(comment "The temperature control units present in this residency")
-		(type SYMBOL)
-		(allowed-values airConditioning heating both none)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot schoolAddress
-		(type INSTANCE)
-;+		(allowed-classes CITY_ADDRESS)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Position
-		(type INSTANCE)
-;+		(allowed-classes LOCATION)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Terrace
+;+		(comment "The temperature control units present in this residency.")
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot serviceAddress
 ;+		(comment "The location at which this service exists")
@@ -149,25 +103,12 @@
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot X_Coord
-		(type FLOAT)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(single-slot sunshine
 		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot m2
 		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Box_Address
-		(type INSTANCE)
-;+		(allowed-classes CITY_ADDRESS)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Quality
-		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot parkingSpace
@@ -186,26 +127,17 @@
 		(allowed-values indian chinese italian japanese fastFood)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot furnishing
-;+		(comment "The state of furnishing of a residency")
-		(type SYMBOL)
-		(allowed-values semi full none)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot view
 ;+		(comment "Additional attribute of this residency ; the view that it provides")
 		(type SYMBOL)
 		(allowed-values city sea garden none)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot recomendationLevel
+	(single-slot typeOfTheService
+;+		(comment "This decribes what 'type' of the service it is.")
 		(type SYMBOL)
-		(allowed-values partially_adequate adequate very_recommendable)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot X_Coo
-		(type INTEGER)
-;+		(cardinality 0 1)
+		(allowed-values greenArea recreation school shops health publicTransport)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot minimumRent
 ;+		(comment "This is the rent which is set by the owner of a residency.  A Rental offer has this as the lower limit")
@@ -235,26 +167,9 @@
 ;+		(allowed-classes CITY_ADDRESS)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot Y_Coo
-		(type INTEGER)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot swimmingPool
+	(single-slot variant
 		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot AI2project_Class10002
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot AI2project_Class2
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot area
-;+		(comment "The area of the apartment in metre square")
-		(type INTEGER)
+		(allowed-values duplex attic)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot best_features
@@ -266,20 +181,11 @@
 ;+		(allowed-classes RESIDENTIAL)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot AI2project_Class1
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
 	(single-slot address
 ;+		(comment "The address of a residency")
 		(type INSTANCE)
 ;+		(allowed-classes CITY_ADDRESS)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot balcony
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot museumType
 		(type SYMBOL)
@@ -291,21 +197,83 @@
 ;+		(allowed-classes Coordinates)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
+	(single-slot recommendationScore
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot locCoordinates
 ;+		(comment "The co-ordinates for this location")
 		(type INSTANCE)
 ;+		(allowed-classes Coordinates)
 ;+		(cardinality 1 1)
-		(create-accessor read-write)))
-
-(defclass RESIDENTIAL "Abstract Class to capture housing options available to the citizens of AnyWhereTown"
-	(is-a USER)
-	(role abstract)
+		(create-accessor read-write))
+	(single-slot secondName
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot maxBudget
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot sunlight
 ;+		(comment "Additional attribute about the sunlight recieved by this residency.")
 		(type SYMBOL)
 		(allowed-values all_day morning afternoon evening)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot stationLocation
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot locAttribute
+;+		(comment "This slot helps determine the area's general attribute")
+		(type SYMBOL)
+		(allowed-values posh happening classy downtown moderate)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot floor2
+;+		(comment "A duplex exists in two floors. This is the value of the second floor.")
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot recommendationCharacteristics
+;+		(comment "The criteria which have lead to the recommendation level")
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot trainStationAddress
+		(type INSTANCE)
+;+		(allowed-classes CITY_ADDRESS)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot schoolAddress
+		(type INSTANCE)
+;+		(allowed-classes CITY_ADDRESS)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Position
+		(type INSTANCE)
+;+		(allowed-classes)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Terrace
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot X_Coord
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Quality
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot fullFlatForRent
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot furnishing
 ;+		(comment "The state of furnishing of a residency")
@@ -313,11 +281,15 @@
 		(allowed-values semi full none)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot view
-;+		(comment "Additional attribute of this residency ; the view that it provides")
+	(single-slot recomendationLevel
 		(type SYMBOL)
-		(allowed-values city sea garden none)
+		(allowed-values partially_adequate adequate very_recommendable)
 ;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot type
+		(type SYMBOL)
+		(allowed-values house apartment)
+;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot swimmingPool
 		(type SYMBOL)
@@ -329,19 +301,42 @@
 		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot numberOfBedrooms
+	(single-slot balcony
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass RESIDENTIAL "Abstract Class to capture housing options available to the citizens of AnyWhereTown"
+	(is-a USER)
+	(role concrete)
+	(single-slot variant
+		(type SYMBOL)
+		(allowed-values duplex attic)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot rent
 		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot temperatureControl
-;+		(comment "The temperature control units present in this residency")
+	(single-slot swimmingPool
 		(type SYMBOL)
-		(allowed-values airConditioning heating both none)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot area
+;+		(comment "The area of the apartment in metre square")
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot street
+;+		(comment "Identifies the street in the City where this address is")
+		(type STRING)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot minimumRent
-;+		(comment "This is the rent which is set by the owner of a residency.  A Rental offer has this as the lower limit")
-		(type INTEGER)
+	(single-slot fullFlatForRent
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot parkingSpace
@@ -355,97 +350,58 @@
 		(type INSTANCE)
 ;+		(allowed-classes CITY_ADDRESS)
 ;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass APARTMENT
-	(is-a RESIDENTIAL)
-	(role abstract)
-	(single-slot petsAllowed
-;+		(comment "are pets allowed?")
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 0 1)
 		(create-accessor read-write))
-	(single-slot balcony
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot floor
-;+		(comment "The floor at which this apartment exists")
+	(single-slot roomsForRent
 		(type INTEGER)
 ;+		(cardinality 1 1)
-		(create-accessor read-write)))
-
-(defclass PENTHOUSE
-	(is-a APARTMENT)
-	(role concrete))
-
-(defclass FLAT
-	(is-a APARTMENT)
-	(role concrete))
-
-(defclass DUPLEX
-	(is-a APARTMENT)
-	(role concrete)
-	(single-slot floor2
-;+		(comment "A duplex exists in two floors. This is the value of the second floor.")
+		(create-accessor read-write))
+	(single-slot sunlight
+;+		(comment "Additional attribute about the sunlight recieved by this residency.")
+		(type SYMBOL)
+		(allowed-values all_day morning afternoon evening)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot number
+;+		(comment "Identifies the number on the street which this address is.")
 		(type INTEGER)
 ;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass HOUSE
-	(is-a RESIDENTIAL)
-	(role abstract)
-	(single-slot terrace
+		(create-accessor read-write))
+	(single-slot furnishing
+;+		(comment "The state of furnishing of a residency")
+		(type SYMBOL)
+		(allowed-values semi full none)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot type
+		(type SYMBOL)
+		(allowed-values house apartment)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot recomendationLevel
+		(type SYMBOL)
+		(allowed-values partially_adequate adequate very_recommendable)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot view
+;+		(comment "Additional attribute of this residency ; the view that it provides")
+		(type SYMBOL)
+		(allowed-values city sea garden none)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot totalBedrooms
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot temperatureControl
+;+		(comment "The temperature control units present in this residency.")
 		(type SYMBOL)
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
-		(create-accessor read-write)))
-
-(defclass DETACHED
-	(is-a HOUSE)
-	(role concrete))
-
-(defclass ATTIC
-	(is-a HOUSE)
-	(role concrete))
-
-(defclass SEMI_DETACHED
-	(is-a HOUSE)
-	(role concrete))
-
-(defclass VILLA
-	(is-a HOUSE)
-	(role concrete))
-
-(defclass LOCATION "A location within AnyWhereTown which has 2 dimensional coordinates as well as an associated attirbute which is adjudged on the basis the nearby services."
-	(is-a USER)
-	(role concrete)
+		(create-accessor read-write))
 	(single-slot locAttribute
 ;+		(comment "This slot helps determine the area's general attribute")
 		(type SYMBOL)
 		(allowed-values posh happening classy downtown moderate)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot locCoordinates
-;+		(comment "The co-ordinates for this location")
-		(type INSTANCE)
-;+		(allowed-classes Coordinates)
-;+		(cardinality 1 1)
-		(create-accessor read-write)))
-
-(defclass CITY_ADDRESS "An address within the City AnyWhereTown specified by the number on a particular street"
-	(is-a LOCATION)
-	(role concrete)
-	(single-slot number
-;+		(comment "Identifies the number on the street which this address is.")
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot street
-;+		(comment "Identifies the street in the City where this address is")
-		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 
@@ -463,169 +419,23 @@
 
 (defclass SERVICES
 	(is-a USER)
-	(role abstract)
+	(role concrete)
+	(single-slot serviceLocation
+		(type INSTANCE)
+;+		(allowed-classes CITY_ADDRESS)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot typeOfTheService
+;+		(comment "This decribes what 'type' of the service it is.")
+		(type SYMBOL)
+		(allowed-values greenArea recreation school shops health publicTransport)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
 	(single-slot nameOfTheService
 ;+		(comment "Identifier for the Service")
 		(type STRING)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
-
-(defclass RECREATION
-	(is-a SERVICES)
-	(role abstract)
-	(single-slot recAddress
-		(type INSTANCE)
-;+		(allowed-classes CITY_ADDRESS)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass ZOO
-	(is-a RECREATION)
-	(role concrete))
-
-(defclass BAR
-	(is-a RECREATION)
-	(role concrete))
-
-(defclass CLUB
-	(is-a RECREATION)
-	(role concrete))
-
-(defclass RESTAURANT
-	(is-a RECREATION)
-	(role concrete)
-	(single-slot restaurantType
-		(type SYMBOL)
-		(allowed-values indian chinese italian japanese fastFood)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass MUSEUM
-	(is-a RECREATION)
-	(role concrete)
-	(single-slot museumType
-		(type SYMBOL)
-		(allowed-values science historical art)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass THEATER
-	(is-a RECREATION)
-	(role concrete))
-
-(defclass STADIUM
-	(is-a RECREATION)
-	(role concrete)
-	(single-slot stat
-		(type STRING)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass SHOPS
-	(is-a SERVICES)
-	(role abstract)
-	(single-slot shopAddress
-		(type INSTANCE)
-;+		(allowed-classes CITY_ADDRESS)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass SUPERMARKET
-	(is-a SHOPS)
-	(role concrete))
-
-(defclass MINIMARKET
-	(is-a SHOPS)
-	(role concrete))
-
-(defclass MALL
-	(is-a SHOPS)
-	(role concrete))
-
-(defclass SHOPPING_CENTRE
-	(is-a SHOPS)
-	(role concrete))
-
-(defclass SCHOOL
-	(is-a SERVICES)
-	(role abstract)
-	(single-slot schoolAddress
-		(type INSTANCE)
-;+		(allowed-classes CITY_ADDRESS)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass PRIMARY
-	(is-a SCHOOL)
-	(role concrete))
-
-(defclass SECONDARY
-	(is-a SCHOOL)
-	(role concrete))
-
-(defclass UNIVERSITY
-	(is-a SCHOOL)
-	(role concrete))
-
-(defclass PUBLIC+TRANSPORT
-	(is-a SERVICES)
-	(role abstract))
-
-(defclass STATION
-	(is-a PUBLIC+TRANSPORT)
-	(role abstract)
-	(single-slot stationLocation
-		(type INSTANCE)
-;+		(allowed-classes LOCATION)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass TUBE
-	(is-a STATION)
-	(role concrete))
-
-(defclass BUS
-	(is-a STATION)
-	(role concrete))
-
-(defclass NIGHT_BUS
-	(is-a STATION)
-	(role concrete))
-
-(defclass BICING
-	(is-a STATION)
-	(role concrete))
-
-(defclass TRAIN_STATION
-	(is-a PUBLIC+TRANSPORT)
-	(role concrete)
-	(single-slot trainStationAddress
-		(type INSTANCE)
-;+		(allowed-classes CITY_ADDRESS)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass GREEN_AREA "The green areas in a city"
-	(is-a SERVICES)
-	(role concrete)
-	(single-slot Position
-		(type INSTANCE)
-;+		(allowed-classes LOCATION)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass HEALTH
-	(is-a SERVICES)
-	(role abstract)
-	(single-slot Adress
-		(type INSTANCE)
-;+		(allowed-classes CITY_ADDRESS)
-;+		(cardinality 0 1)
-		(create-accessor read-write)))
-
-(defclass HOSPITAL
-	(is-a HEALTH)
-	(role concrete))
 
 (defclass USER_PROFILE "This represents a profile of a particular user"
 	(is-a USER)
@@ -651,7 +461,17 @@
 ;+		(cardinality 0 1)
 		(create-accessor read-write)))
 
-(defclass RENTAL_OFFER "The rental offerings that are provided to the expert system to choose from"
+(defclass CITY_ADDRESS "An address within the City AnyWhereTown specified by the number on a particular street"
+	(is-a USER)
+	(role concrete)
+	(single-slot locCoordinates
+;+		(comment "The co-ordinates for this location")
+		(type INSTANCE)
+;+		(allowed-classes Coordinates)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass RENTAL_OFFER
 	(is-a USER)
 	(role concrete)
 	(single-slot recommendationCharacteristics
@@ -673,97 +493,94 @@
 ;+		(allowed-classes RESIDENTIAL)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))(definstances ai2KBSinstances
-; Mon Dec 28 23:45:03 CET 2009
+; Thu Dec 31 05:51:45 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
 
-([AI2project_Class20004] of  ATTIC
+([AIProject2pprj_Class4] of  CITY_ADDRESS
 
-	(address [AI2project_Class30015])
-	(area 120)
-	(minimumRent 1200)
-	(numberOfBedrooms 3)
-	(parkingSpace TRUE)
-	(sunlight all_day)
-	(swimmingPool TRUE)
-	(temperatureControl both)
-	(terrace TRUE)
-	(view sea))
+	(locCoordinates [AIProject2pprj_Class5]))
 
-([AI2project_Class30005] of  CITY_ADDRESS
+([AIProject2pprj_Class5] of  Coordinates
 
-	(locAttribute classy)
-	(locCoordinates [AI2project_Class30008])
-	(number 2)
-	(street "diagonal"))
+	(X_Coord 1125.0)
+	(Y_Coord 1300.0))
 
-([AI2project_Class30008] of  Coordinates
+([AIProject2pprj_Class8] of  Coordinates
 
-	(X_Coord 20.0)
-	(Y_Coord 30.0))
+	(X_Coord 10.0)
+	(Y_Coord 10.0))
 
-([AI2project_Class30010] of  FLAT
+([Housing_Class0] of  SERVICES
 
-	(address [AI2project_Class30005])
+	(nameOfTheService "park de guel")
+	(serviceLocation [Housing_Class10002])
+	(typeOfTheService green_area))
+
+([Housing_Class10000] of  Coordinates
+
+	(X_Coord 25.0)
+	(Y_Coord 25.0))
+
+([Housing_Class10001] of  CITY_ADDRESS
+
+	(locCoordinates [AIProject2pprj_Class8]))
+
+([Housing_Class10002] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class10003]))
+
+([Housing_Class10003] of  Coordinates
+
+	(X_Coord 15.0)
+	(Y_Coord 10.0))
+
+([Housing_Class2] of  RESIDENTIAL
+
+	(address [Housing_Class10001])
 	(area 100)
-	(balcony TRUE)
-	(floor 2)
+	(fullFlatForRent TRUE)
 	(furnishing semi)
-	(minimumRent 1000)
-	(numberOfBedrooms 2)
+	(locAttribute posh)
 	(parkingSpace TRUE)
-	(petsAllowed FALSE)
-	(sunlight all_day)
-	(swimmingPool FALSE)
-	(temperatureControl air_conditioning)
-	(view city))
-
-([AI2project_Class30012] of  FLAT
-
-	(address [AI2project_Class30013])
-	(area 60)
-	(balcony TRUE)
-	(floor 2)
-	(minimumRent 800)
-	(numberOfBedrooms 1)
-	(parkingSpace TRUE)
-	(petsAllowed TRUE)
-	(swimmingPool FALSE)
-	(temperatureControl heating)
-	(view sea))
-
-([AI2project_Class30013] of  CITY_ADDRESS
-
-	(locAttribute downtown)
-	(locCoordinates [AI2project_Class30014])
-	(number 3)
-	(street "badal"))
-
-([AI2project_Class30014] of  Coordinates
-
-	(X_Coord 40.0)
-	(Y_Coord 20.0))
-
-([AI2project_Class30015] of  CITY_ADDRESS
-
-	(locAttribute happening)
-	(locCoordinates [AI2project_Class30016])
-	(number 1)
-	(street "rambla catalunya"))
-
-([AI2project_Class30016] of  Coordinates
-
-	(X_Coord 50.0)
-	(Y_Coord 50.0))
-
-([AI2project_Class30017] of  RENTAL_OFFER
-
 	(rent 1200)
-	(residentialOffer [AI2project_Class30012]))
+	(roomsForRent 5)
+	(swimmingPool TRUE)
+	(temperatureControl TRUE)
+	(totalBedrooms 5)
+	(type apartment)
+	(variant attic)
+	(view none))
 
-([AI2project_Class30018] of  RENTAL_OFFER
+([Housing_Class20001] of  SERVICES
 
-	(rent 1200)
-	(residentialOffer [AI2project_Class20004]))
+	(nameOfTheService "UPC")
+	(serviceLocation [Housing_Class20002])
+	(typeOfTheService school))
+
+([Housing_Class20002] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class10000]))
+
+([Housing_Class20003] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class20004]))
+
+([Housing_Class20004] of  Coordinates
+
+	(X_Coord 10.0)
+	(Y_Coord 15.0))
+
+([Housing_Class20005] of  SERVICES
+
+	(nameOfTheService "bus")
+	(serviceLocation [Housing_Class20003])
+	(typeOfTheService publicTransport))
+
+([Housing_Class3] of  SERVICES
+
+	(nameOfTheService "bar")
+	(serviceLocation [AIProject2pprj_Class4])
+	(typeOfTheService recreation))
 ) 
