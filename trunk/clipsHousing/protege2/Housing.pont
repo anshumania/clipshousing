@@ -1,4 +1,4 @@
-; Thu Dec 31 06:35:41 CET 2009
+; Thu Dec 31 12:13:30 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -169,7 +169,7 @@
 		(create-accessor read-write))
 	(single-slot variant
 		(type SYMBOL)
-		(allowed-values duplex attic)
+		(allowed-values duplex attic flat detached villa semi_detached penthouse)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot best_features
@@ -312,7 +312,7 @@
 	(role concrete)
 	(single-slot variant
 		(type SYMBOL)
-		(allowed-values duplex attic)
+		(allowed-values duplex attic flat detached villa semi_detached penthouse)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot rent

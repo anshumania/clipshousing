@@ -1,4 +1,4 @@
-; Thu Dec 31 06:35:41 CET 2009
+; Thu Dec 31 12:13:30 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -14,19 +14,19 @@
 
 ([AIProject2pprj_Class8] of  Coordinates
 
-	(X_Coord 10.0)
-	(Y_Coord 10.0))
+	(X_Coord 1000.0)
+	(Y_Coord 1000.0))
 
 ([Housing_Class0] of  SERVICES
 
 	(nameOfTheService "park de guel")
-	(serviceLocation [Housing_Class10002])
-	(typeOfTheService green_area))
+	(serviceLocation [Housing_Class40004])
+	(typeOfTheService greenArea))
 
 ([Housing_Class10000] of  Coordinates
 
-	(X_Coord 25.0)
-	(Y_Coord 25.0))
+	(X_Coord 2450.0)
+	(Y_Coord 9000.0))
 
 ([Housing_Class10001] of  CITY_ADDRESS
 
@@ -38,8 +38,8 @@
 
 ([Housing_Class10003] of  Coordinates
 
-	(X_Coord 15.0)
-	(Y_Coord 10.0))
+	(X_Coord 1500.0)
+	(Y_Coord 1000.0))
 
 ([Housing_Class2] of  RESIDENTIAL
 
@@ -48,15 +48,36 @@
 	(fullFlatForRent TRUE)
 	(furnishing semi)
 	(locAttribute posh)
+	(number 13)
 	(parkingSpace TRUE)
 	(rent 1200)
 	(roomsForRent 5)
+	(street "newyork street")
 	(swimmingPool TRUE)
 	(temperatureControl TRUE)
 	(totalBedrooms 5)
 	(type apartment)
 	(variant attic)
 	(view none))
+
+([Housing_Class20000] of  RESIDENTIAL
+
+	(address [Housing_Class30001])
+	(area 50)
+	(fullFlatForRent TRUE)
+	(furnishing none)
+	(locAttribute happening)
+	(number 23)
+	(parkingSpace FALSE)
+	(rent 490)
+	(roomsForRent 1)
+	(street "rome street")
+	(sunlight afternoon)
+	(swimmingPool FALSE)
+	(temperatureControl FALSE)
+	(totalBedrooms 1)
+	(type apartment)
+	(variant flat))
 
 ([Housing_Class20001] of  SERVICES
 
@@ -74,17 +95,63 @@
 
 ([Housing_Class20004] of  Coordinates
 
-	(X_Coord 10.0)
-	(Y_Coord 15.0))
+	(X_Coord 2000.0)
+	(Y_Coord 9400.0))
 
 ([Housing_Class20005] of  SERVICES
 
-	(nameOfTheService "bus")
+	(nameOfTheService "metro")
 	(serviceLocation [Housing_Class20003])
 	(typeOfTheService publicTransport))
 
 ([Housing_Class3] of  SERVICES
 
-	(nameOfTheService "bar")
+	(nameOfTheService "bar new york 57")
 	(serviceLocation [AIProject2pprj_Class4])
 	(typeOfTheService recreation))
+
+([Housing_Class30000] of  RESIDENTIAL
+
+	(address [Housing_Class40001])
+	(area 60)
+	(fullFlatForRent TRUE)
+	(furnishing semi)
+	(locAttribute happening)
+	(number 45)
+	(parkingSpace FALSE)
+	(rent 500)
+	(roomsForRent 1)
+	(street "london street")
+	(sunlight all_day)
+	(swimmingPool TRUE)
+	(temperatureControl TRUE)
+	(totalBedrooms 1)
+	(type apartment)
+	(variant flat))
+
+([Housing_Class30001] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class30002]))
+
+([Housing_Class30002] of  Coordinates
+
+	(X_Coord 2000.0)
+	(Y_Coord 9000.0))
+
+([Housing_Class40001] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class40002]))
+
+([Housing_Class40002] of  Coordinates
+
+	(X_Coord 3000.0)
+	(Y_Coord 8000.0))
+
+([Housing_Class40004] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class40005]))
+
+([Housing_Class40005] of  Coordinates
+
+	(X_Coord 7500.0)
+	(Y_Coord 4000.0))
