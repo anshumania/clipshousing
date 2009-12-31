@@ -25,6 +25,7 @@
 ;;	(slot user_profile)
 	(slot recoScore)
 	(slot residential)
+        (slot recommendationLevel)
 	(slot recommendationCharacteristics)
 	(slot recommendationUserPrefs
 	(type STRING)
@@ -104,6 +105,7 @@
   (printout t "RecommendationScore : " ?self:recoScore crlf)
   (printout t "RecommendationChars : " ?self:recommendationCharacteristics crlf)
   (printout t "RecommendationUserPrefs : " ?self:recommendationUserPrefs crlf)
+  (printout t "RecommendationLevel : " ?self:recommendationLevel crlf)
   (printout t crlf)
 )
 
@@ -281,10 +283,10 @@
 	(printout t "--------------------makingInstance-------------------------------------------------" crlf)
 
 		     ;do-for execution
-	 (make-instance of Recommendation (residential ?offer)(recoScore 0)(recommendationCharacteristics "")(recommendationUserPrefs ""))
-    	    )
+	 (make-instance of Recommendation (residential ?offer)(recoScore 0)(recommendationCharacteristics "")(recommendationUserPrefs "")(recommendationLevel ""))
     ; modify the profiler to indicate that it has got all the offers
 	(modify ?profiler(currentState "FETCHEDOFFERS"))
+)
 )
 
 ;------------------------------------------
@@ -595,7 +597,7 @@
              (bind ?reco (send ?recommendation get-recommendationCharacteristics))
 	    ; update the recommendation characteristic
 	     (send ?recommendation put-recommendationCharacteristics (str-cat ?reco "RENT is HIGH. "))
-
+	     (send ?recommendation put-recommendationCharacteristics "REJECTED")
 ;	         (send (send ?recommendation get-residential) put-recommendationCharacteristics 
 ;			(str-cat (send (send ?recommendation get-residential) get-recommendationCharacteristics) "Rent is HIGH."))
 
@@ -603,7 +605,7 @@
 	  
 	      else
              (bind ?reco (send ?recommendation  get-recommendationCharacteristics))
- 	      	     (send ?recommendation put-recommendationCharacteristics (str-cat ?reco "RENT within BUDGET"))
+ 	      	     (send ?recommendation put-recommendationCharacteristics (str-cat ?reco "RENT within BUDGET. "))
 		     (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 10))
 
 		  (printout t "SCORE FOR BUDGET --- " (send ?recommendation get-recoScore) crlf)
@@ -822,16 +824,32 @@
 
 
 
-; finish filters
-(defrule completed-filter "Rule to check if all filters have been applied"
+; calculate recommendation Level
+(defrule recommendLevel-filter "Rule to set the recommendation Levels"
   ?profiler <- (profiler (user_profile ?user)(currentState "FINISHED"))
-; (budgetFilter done)
-; (activityFilter done)
+   ?recommendation <- (object (is-a Recommendation))
  =>
-  (modify ?profiler(currentState "PRINTOFFERS"))
+         (bind ?recoScore (send ?recommendation get-recoScore))
+         (bind ?recoLevel (send ?recommendation get-recommendationLevel))
+     
+         (if(> 15 ?recoScore)
+         then  (send ?recommendation put-recommendationLevel "PARTIALLY_ADEQUATE")
+         else
+            (if (> 20 ?recoScore)
+              then (send ?recommendation put-recommendationLevel "ADEQUATE")
+            else
+               (send ?recommendation put-recommendationLevel "VERY_RECOMMENDABLE")
+ 	    )
+	)
+
 )
 
-
+; finish filters
+(defrule completed-filter "Rule to check if all filters have been applied and set the recommendation Levels"
+  ?profiler <- (profiler (user_profile ?user)(currentState "FINISHED"))
+ =>
+   (modify ?profiler(currentState "PRINTOFFERS"))
+)
 
 
 
@@ -849,16 +867,18 @@
 
 (defrule printall
 	?profiler <- (profiler (user_profile ?user)(currentState "PRINTOFFERS"))
-;	?recommendation <- (object (is-a Recommendation))
+	?recommendation <- (object (is-a Recommendation))
 	=>
 	(printout t "--------------------in printall-------------------------------------------------" crlf)
   	(format t "Dear %s,%s%n" (send ?user get-firstName) (send ?user get-secondName))
 	(printout t " THE KBS recommends " crlf crlf)
-	(do-for-all-instances 
-	    ((?recommendation Recommendation))
+;	(do-for-all-instances 
+;	    ((?recommendation Recommendation))
 	  ; todo only for recommendations which are at right recommendation level
+
+         
 	    (printout t (send ?recommendation print))
-	)
+;	)
 	(modify ?profiler (currentState "TERMINATE"))
 ;        (assert(doneIs TRUE))
 ;	(printout t "-------------------doneISTRUE-------------------------------------------------" crlf)

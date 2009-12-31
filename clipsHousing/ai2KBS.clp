@@ -1,4 +1,4 @@
-; Thu Dec 31 05:51:45 CET 2009
+; Thu Dec 31 06:35:41 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -493,7 +493,7 @@
 ;+		(allowed-classes RESIDENTIAL)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))(definstances ai2KBSinstances
-; Thu Dec 31 05:51:45 CET 2009
+; Thu Dec 31 06:35:41 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
