@@ -1,4 +1,4 @@
-; Thu Dec 31 18:25:19 CET 2009
+; Thu Dec 31 18:44:44 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -106,7 +106,7 @@
 
 ([Housing_Class3] of  SERVICES
 
-	(nameOfTheService "bar new york 57")
+	(nameOfTheService "bar")
 	(serviceLocation [AIProject2pprj_Class4])
 	(typeOfTheService recreation))
 
