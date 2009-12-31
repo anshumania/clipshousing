@@ -1,4 +1,4 @@
-; Thu Dec 31 06:24:36 CET 2009
+; Thu Dec 31 06:35:41 CET 2009
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -348,14 +348,14 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[Housing_ProjectKB_Class195]
-		[Housing_ProjectKB_Class196]
-		[Housing_ProjectKB_Class197]
-		[Housing_ProjectKB_Class198]
-		[Housing_ProjectKB_Class199]
-		[Housing_ProjectKB_Class200]
-		[Housing_ProjectKB_Class201]
-		[Housing_ProjectKB_Class202]))
+		[Housing_ProjectKB_Class206]
+		[Housing_ProjectKB_Class207]
+		[Housing_ProjectKB_Class208]
+		[Housing_ProjectKB_Class209]
+		[Housing_ProjectKB_Class210]
+		[Housing_ProjectKB_Class211]
+		[Housing_ProjectKB_Class212]
+		[Housing_ProjectKB_Class213]))
 
 ([CLSES_TAB] of  Widget
 
@@ -403,61 +403,61 @@
 ([Housing_ProjectKB_Class14] of  Property_List
 )
 
-([Housing_ProjectKB_Class195] of  String
+([Housing_ProjectKB_Class206] of  String
 
 	(name "CITY_ADDRESS")
 	(string_value "{adr_}locCoordinates"))
 
-([Housing_ProjectKB_Class196] of  String
+([Housing_ProjectKB_Class207] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([Housing_ProjectKB_Class197] of  String
+([Housing_ProjectKB_Class208] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([Housing_ProjectKB_Class198] of  String
+([Housing_ProjectKB_Class209] of  String
 
 	(name ":META-CLASS")
 	(string_value "%3ANAME"))
 
-([Housing_ProjectKB_Class199] of  String
+([Housing_ProjectKB_Class210] of  String
 
 	(name "Coordinates")
 	(string_value "{x_}X_Coord{_y_}Y_Coord"))
 
-([Housing_ProjectKB_Class200] of  String
+([Housing_ProjectKB_Class211] of  String
 
 	(name "SERVICES")
 	(string_value "{service_}nameOfTheService{_}typeOfTheService{_}serviceLocation"))
 
-([Housing_ProjectKB_Class201] of  String
+([Housing_ProjectKB_Class212] of  String
 
 	(name "RENTAL_OFFER")
 	(string_value "{rent_}rent{_rnt_}"))
 
-([Housing_ProjectKB_Class202] of  String
+([Housing_ProjectKB_Class213] of  String
 
 	(name "RESIDENTIAL")
 	(string_value "{res_}variant{_}address"))
 
-([Housing_ProjectKB_Class203] of  Map_Entry
+([Housing_ProjectKB_Class214] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([Housing_ProjectKB_Class204] of  Map_Entry
+([Housing_ProjectKB_Class215] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([Housing_ProjectKB_Class205] of  Map_Entry
+([Housing_ProjectKB_Class216] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
@@ -496,9 +496,9 @@
 ([KB_120621_Class1] of  Map
 
 	(entries
-		[Housing_ProjectKB_Class203]
-		[Housing_ProjectKB_Class204]
-		[Housing_ProjectKB_Class205]))
+		[Housing_ProjectKB_Class214]
+		[Housing_ProjectKB_Class215]
+		[Housing_ProjectKB_Class216]))
 
 ([KB_120621_Class75] of  Property_List
 
