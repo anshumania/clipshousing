@@ -1,4 +1,4 @@
-; Thu Dec 31 18:44:44 CET 2009
+; Fri Jan 01 17:10:20 CET 2010
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -162,6 +162,12 @@
 	(X_Coord 7500.0)
 	(Y_Coord 4000.0))
 
+([Housing_Class50000] of  SERVICES
+
+	(nameOfTheService "swimminPool")
+	(serviceLocation [Housing_Class60001])
+	(typeOfTheService recreation))
+
 ([Housing_Class50001] of  CITY_ADDRESS
 
 	(locCoordinates [Housing_Class50002]))
@@ -315,7 +321,7 @@
 	(parkingSpace FALSE)
 	(rent 2000)
 	(roomsForRent 2)
-	(street "barcelona street")
+	(street "mountain street")
 	(sunlight all_day)
 	(swimmingPool TRUE)
 	(temperatureControl TRUE)
@@ -387,3 +393,87 @@
 
 	(X_Coord 8800.0)
 	(Y_Coord 6250.0))
+
+([Housing_Class60000] of  SERVICES
+
+	(nameOfTheService "esade")
+	(serviceLocation [Housing_Class70001])
+	(typeOfTheService school))
+
+([Housing_Class60001] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class60002]))
+
+([Housing_Class60002] of  Coordinates
+
+	(X_Coord 6000.0)
+	(Y_Coord 9000.0))
+
+([Housing_Class60003] of  SERVICES
+
+	(nameOfTheService "trainStation")
+	(serviceLocation [Housing_Class60004])
+	(typeOfTheService publicTransport))
+
+([Housing_Class60004] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class60005]))
+
+([Housing_Class60005] of  Coordinates
+
+	(X_Coord 5200.0)
+	(Y_Coord 5500.0))
+
+([Housing_Class60006] of  SERVICES
+
+	(nameOfTheService "resturant")
+	(serviceLocation [Housing_Class60007])
+	(typeOfTheService recreation))
+
+([Housing_Class60007] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class60008]))
+
+([Housing_Class60008] of  Coordinates
+
+	(X_Coord 5500.0)
+	(Y_Coord 3500.0))
+
+([Housing_Class60009] of  SERVICES
+
+	(nameOfTheService "nightBar")
+	(serviceLocation [Housing_Class60010])
+	(typeOfTheService recreation))
+
+([Housing_Class60010] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class60011]))
+
+([Housing_Class60011] of  Coordinates
+
+	(X_Coord 8800.0)
+	(Y_Coord 8000.0))
+
+([Housing_Class70001] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class70002]))
+
+([Housing_Class70002] of  Coordinates
+
+	(X_Coord 1500.0)
+	(Y_Coord 4000.0))
+
+([Housing_Class70003] of  SERVICES
+
+	(nameOfTheService "UB")
+	(serviceLocation [Housing_Class70004])
+	(typeOfTheService school))
+
+([Housing_Class70004] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class70005]))
+
+([Housing_Class70005] of  Coordinates
+
+	(X_Coord 6000.0)
+	(Y_Coord 7500.0))
