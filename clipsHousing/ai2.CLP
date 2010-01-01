@@ -598,6 +598,7 @@
 	    ; update the recommendation characteristic
 	     (send ?recommendation put-recommendationCharacteristics (str-cat ?reco "RENT is HIGH. "))
 	     (send ?recommendation put-recommendationCharacteristics "REJECTED")
+             (send ?recommendation put-recommendationLevel "REJECTED")
 ;	         (send (send ?recommendation get-residential) put-recommendationCharacteristics 
 ;			(str-cat (send (send ?recommendation get-residential) get-recommendationCharacteristics) "Rent is HIGH."))
 
@@ -854,7 +855,8 @@
  =>
          (bind ?recoScore (send ?recommendation get-recoScore))
          (bind ?recoLevel (send ?recommendation get-recommendationLevel))
-     
+         (if(neq ?recoLevel "REJECTED")     
+	 then
          (if(> 15 ?recoScore)
          then  (send ?recommendation put-recommendationLevel "PARTIALLY_ADEQUATE")
          else
@@ -864,7 +866,7 @@
                (send ?recommendation put-recommendationLevel "VERY_RECOMMENDABLE")
  	    )
 	)
-
+   )
 )
 
 ; finish filters
