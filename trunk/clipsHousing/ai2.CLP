@@ -737,6 +737,7 @@
    ?recommendation <- (object (is-a Recommendation))
    (profiled-user homeType ?type)
    (profiled-user rooms ?rooms)
+   (profiled-user modeOfTransport ?transport)
    (profiled-user temperatureControl ?temperature)
    (profiled-user furnishing ?furnishing)
    (profiled-user goodView ?view)
@@ -764,7 +765,9 @@
   ;;(printout t "swimmingPool" ?pool crlf)  
   ;the view
   (bind ?offerView (send (send ?recommendation get-residential) get-view) )
-  ;;(printout t "offerView" ?offerView crlf)  
+  ;;(printout t "offerView" ?offerView crlf)
+  (bind ?parking (send (send ?recommendation get-residential) get-parkingSpace) )  
+  ;;(printout t "offerView" ?parking crlf)
 
    ; profile the user to the rental offer
   (bind ?reco (send ?recommendation get-recommendationUserPrefs))
@@ -794,6 +797,15 @@
   ;;(printout t "the full flat is for rent" crlf)
 ;  (send ?recommendation put-recommendationUserPrefs (str-cat ?reco " IS for full rent. "))
    (bind ?reco (str-cat ?reco "IS for full rent. "))
+  (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 5))
+  )
+
+
+; the user has a car and the offer has parking space
+  (and(= (str-compare ?transport "ownCar") 0 ) (= (str-compare ?parking "TRUE") 0 )
+;  (printout t "HAS PARKING ..." crlf)
+;  (send ?recommendation put-recommendationUserPrefs (str-cat ?reco " IS for full rent. "))
+   (bind ?reco (str-cat ?reco "Has parking. "))
   (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 5))
   )
 
