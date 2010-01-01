@@ -1,4 +1,4 @@
-; Fri Jan 01 18:32:59 CET 2010
+; Fri Jan 01 19:08:01 CET 2010
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -211,7 +211,7 @@
 
 	(nameOfTheService "zoo")
 	(serviceLocation [Housing_Class50010])
-	(typeOfTheService recreation))
+	(typeOfTheService greenArea))
 
 ([Housing_Class50010] of  CITY_ADDRESS
 
