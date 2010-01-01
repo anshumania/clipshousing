@@ -417,8 +417,8 @@
 
 
 
-(defrule young-person "Advanced profiling for young person (age < 35)"
-	(profiled-user age young)
+(defrule uni-person "Advanced profiling for person  who studies"
+	(profiled-user age ?)
         (profiled-user modeOfTransport ?transport)
 	(not(profiled-user university ?))
 	?profiler <- (profiler (user_profile ?user)(currentState "ADVANCEDPROFILING"))
