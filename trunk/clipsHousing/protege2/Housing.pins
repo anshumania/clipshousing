@@ -1,4 +1,4 @@
-; Fri Jan 01 17:10:20 CET 2010
+; Fri Jan 01 18:32:59 CET 2010
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -224,7 +224,7 @@
 
 ([Housing_Class50012] of  SERVICES
 
-	(nameOfTheService "theater")
+	(nameOfTheService "theatre")
 	(serviceLocation [Housing_Class50015])
 	(typeOfTheService recreation))
 
