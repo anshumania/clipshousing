@@ -1,4 +1,4 @@
-; Fri Jan 01 19:08:01 CET 2010
+; Fri Jan 01 19:30:35 CET 2010
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -348,14 +348,14 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[Housing_ProjectKB_Class67]
-		[Housing_ProjectKB_Class68]
-		[Housing_ProjectKB_Class69]
-		[Housing_ProjectKB_Class70]
-		[Housing_ProjectKB_Class71]
-		[Housing_ProjectKB_Class72]
-		[Housing_ProjectKB_Class73]
-		[Housing_ProjectKB_Class74]))
+		[Housing_ProjectKB_Class4]
+		[Housing_ProjectKB_Class5]
+		[Housing_ProjectKB_Class6]
+		[Housing_ProjectKB_Class7]
+		[Housing_ProjectKB_Class8]
+		[Housing_ProjectKB_Class9]
+		[Housing_ProjectKB_Class10]
+		[Housing_ProjectKB_Class11]))
 
 ([CLSES_TAB] of  Widget
 
@@ -375,66 +375,66 @@
 	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.FormsTab"))
 
-([Housing_ProjectKB_Class67] of  String
-
-	(name "CITY_ADDRESS")
-	(string_value "{adr_}locCoordinates"))
-
-([Housing_ProjectKB_Class68] of  String
-
-	(name ":INSTANCE-ANNOTATION")
-	(string_value "%3AANNOTATION-TEXT"))
-
-([Housing_ProjectKB_Class69] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([Housing_ProjectKB_Class70] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([Housing_ProjectKB_Class71] of  String
-
-	(name "Coordinates")
-	(string_value "{x_}X_Coord{_y_}Y_Coord"))
-
-([Housing_ProjectKB_Class72] of  String
-
-	(name "SERVICES")
-	(string_value "{service_}nameOfTheService{_}typeOfTheService{_}serviceLocation"))
-
-([Housing_ProjectKB_Class73] of  String
+([Housing_ProjectKB_Class10] of  String
 
 	(name "RENTAL_OFFER")
 	(string_value "{rent_}rent{_rnt_}"))
 
-([Housing_ProjectKB_Class74] of  String
+([Housing_ProjectKB_Class11] of  String
 
 	(name "RESIDENTIAL")
 	(string_value "{res_}variant{_}address"))
 
-([Housing_ProjectKB_Class75] of  Map_Entry
+([Housing_ProjectKB_Class12] of  Map_Entry
 
 	(key "add_name_on_instance_form")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([Housing_ProjectKB_Class76] of  Map_Entry
+([Housing_ProjectKB_Class13] of  Map_Entry
 
 	(key "change_tracking_active")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
 
-([Housing_ProjectKB_Class77] of  Map_Entry
+([Housing_ProjectKB_Class14] of  Map_Entry
 
 	(key "suppress_instance_counting")
 	(key_class "java.lang.String")
 	(value "false")
 	(value_class "java.lang.String"))
+
+([Housing_ProjectKB_Class4] of  String
+
+	(name "CITY_ADDRESS")
+	(string_value "{adr_}locCoordinates"))
+
+([Housing_ProjectKB_Class5] of  String
+
+	(name ":INSTANCE-ANNOTATION")
+	(string_value "%3AANNOTATION-TEXT"))
+
+([Housing_ProjectKB_Class6] of  String
+
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
+
+([Housing_ProjectKB_Class7] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([Housing_ProjectKB_Class8] of  String
+
+	(name "Coordinates")
+	(string_value "{x_}X_Coord{_y_}Y_Coord"))
+
+([Housing_ProjectKB_Class9] of  String
+
+	(name "SERVICES")
+	(string_value "{service_}nameOfTheService{_}typeOfTheService{_}serviceLocation"))
 
 ([INSTANCE_ANNOTATION_FORM_WIDGET] of  Widget
 
@@ -460,6 +460,9 @@
 	(is_hidden FALSE)
 	(widget_class_name "edu.stanford.smi.protege.widget.InstancesTab"))
 
+([KB_096273_Class3] of  Map
+)
+
 ([KB_120621_Class0] of  String
 
 	(name "factory_class_name")
@@ -468,9 +471,9 @@
 ([KB_120621_Class1] of  Map
 
 	(entries
-		[Housing_ProjectKB_Class75]
-		[Housing_ProjectKB_Class76]
-		[Housing_ProjectKB_Class77]))
+		[Housing_ProjectKB_Class12]
+		[Housing_ProjectKB_Class13]
+		[Housing_ProjectKB_Class14]))
 
 ([KB_120621_Class75] of  Property_List
 
@@ -564,9 +567,6 @@
 	(name "instances_file_name")
 	(string_value "Housing.pins"))
 
-([KB_477754_Class3] of  Map
-)
-
 ([LAYOUT_PROPERTIES] of  Property_List
 
 	(name "layout properties")
@@ -651,8 +651,8 @@
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
-		[STANDARD_SLOT_FORM_WIDGET]
 		[STANDARD_FACET_FORM_WIDGET]
+		[STANDARD_SLOT_FORM_WIDGET]
 		[PAL_FORM_WIDGET]
 		[STANDARD_CLASS_FORM_WIDGET])
 	(default_cls_metaclass ":STANDARD-CLASS")
