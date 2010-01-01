@@ -815,7 +815,7 @@
   ;;(printout t "has specified funrishing" crlf)
  ; (send ?recommendation put-recommendationUserPrefs (str-cat ?reco " IS " ?furnishing " furnished. "))
    (bind ?reco (str-cat ?reco "IS " ?furnishing " furnished. "))
-  (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 5))
+  (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 3))
   ) 
 
   ;temperature control
@@ -823,19 +823,19 @@
   then
 ;  (send ?recommendation put-recommendationUserPrefs (str-cat ?reco " Has specified temp. control. "))
   (bind ?reco (str-cat ?reco "Has specified temp. control. "))
-  (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 5))
+  (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 3))
   )
 
   ; there is a swimming pool and the user wants it
   (and(eq ?swim ?pool) (= (str-compare ?pool "TRUE") 0 )
   (bind ?reco (str-cat ?reco "Has SwimmingPool. "))
-  (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 5))
+  (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 2))
   )
 
   ; there is a view and the user wants it
   (and(not(=(str-compare ?offerView "none")0)) (= (str-compare ?view "TRUE") 0 )
   (bind ?reco (str-cat ?reco "Has view of " ?offerView))
-  (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 5))
+  (send ?recommendation put-recoScore (+ (send ?recommendation get-recoScore) 2))
   )
 
 ;    (printout t "at-endrecommendationUSERPREFS" ?reco crlf)
