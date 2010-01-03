@@ -1,4 +1,4 @@
-; Fri Jan 01 20:13:14 CET 2010
+; Sun Jan 03 06:38:06 CET 2010
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -9,62 +9,53 @@
 
 ([AIProject2pprj_Class5] of  Coordinates
 
-	(X_Coord 1125.0)
-	(Y_Coord 1300.0))
+	(X_Coord 500.0)
+	(Y_Coord 2400.0))
 
 ([AIProject2pprj_Class8] of  Coordinates
 
-	(X_Coord 1000.0)
-	(Y_Coord 1000.0))
+	(X_Coord 850.0)
+	(Y_Coord 2750.0))
 
 ([Housing_Class0] of  SERVICES
 
-	(nameOfTheService "park de guel")
-	(serviceLocation [Housing_Class40004])
+	(nameOfTheService "park")
+	(serviceLocation [Housing_Class80009])
 	(typeOfTheService greenArea))
 
 ([Housing_Class10000] of  Coordinates
 
-	(X_Coord 2450.0)
-	(Y_Coord 9000.0))
+	(X_Coord 2500.0)
+	(Y_Coord 3000.0))
 
 ([Housing_Class10001] of  CITY_ADDRESS
 
 	(locCoordinates [AIProject2pprj_Class8]))
 
-([Housing_Class10002] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class10003]))
-
-([Housing_Class10003] of  Coordinates
-
-	(X_Coord 1500.0)
-	(Y_Coord 1000.0))
-
 ([Housing_Class2] of  RESIDENTIAL
 
-	(address [Housing_Class10001])
-	(area 100)
+	(address [Housing_Class80045])
+	(area 1000)
 	(fullFlatForRent TRUE)
-	(furnishing semi)
+	(furnishing full)
 	(locAttribute posh)
 	(number 13)
 	(parkingSpace TRUE)
-	(rent 1200)
+	(rent 4200)
 	(roomsForRent 5)
 	(street "newyork street")
 	(swimmingPool TRUE)
 	(temperatureControl TRUE)
 	(totalBedrooms 5)
-	(type apartment)
-	(variant attic)
-	(view none))
+	(type house)
+	(variant villa)
+	(view city))
 
 ([Housing_Class20000] of  RESIDENTIAL
 
-	(address [Housing_Class30001])
+	(address [Housing_Class20003])
 	(area 50)
-	(fullFlatForRent TRUE)
+	(fullFlatForRent FALSE)
 	(furnishing none)
 	(locAttribute happening)
 	(number 23)
@@ -82,12 +73,8 @@
 ([Housing_Class20001] of  SERVICES
 
 	(nameOfTheService "UPC")
-	(serviceLocation [Housing_Class20002])
+	(serviceLocation [Housing_Class10001])
 	(typeOfTheService school))
-
-([Housing_Class20002] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class10000]))
 
 ([Housing_Class20003] of  CITY_ADDRESS
 
@@ -95,19 +82,19 @@
 
 ([Housing_Class20004] of  Coordinates
 
-	(X_Coord 2000.0)
-	(Y_Coord 9400.0))
+	(X_Coord 1900.0)
+	(Y_Coord 1900.0))
 
 ([Housing_Class20005] of  SERVICES
 
 	(nameOfTheService "metro")
-	(serviceLocation [Housing_Class20003])
+	(serviceLocation [Housing_Class40001])
 	(typeOfTheService publicTransport))
 
 ([Housing_Class3] of  SERVICES
 
 	(nameOfTheService "bar")
-	(serviceLocation [AIProject2pprj_Class4])
+	(serviceLocation [Housing_Class70001])
 	(typeOfTheService recreation))
 
 ([Housing_Class30000] of  RESIDENTIAL
@@ -136,12 +123,12 @@
 ([Housing_Class30002] of  Coordinates
 
 	(X_Coord 2000.0)
-	(Y_Coord 9000.0))
+	(Y_Coord 2200.0))
 
 ([Housing_Class40000] of  SERVICES
 
 	(nameOfTheService "stadium")
-	(serviceLocation [Housing_Class50001])
+	(serviceLocation [Housing_Class30001])
 	(typeOfTheService recreation))
 
 ([Housing_Class40001] of  CITY_ADDRESS
@@ -150,23 +137,8 @@
 
 ([Housing_Class40002] of  Coordinates
 
-	(X_Coord 3000.0)
-	(Y_Coord 8000.0))
-
-([Housing_Class40004] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class40005]))
-
-([Housing_Class40005] of  Coordinates
-
-	(X_Coord 7500.0)
-	(Y_Coord 4000.0))
-
-([Housing_Class50000] of  SERVICES
-
-	(nameOfTheService "swimminPool")
-	(serviceLocation [Housing_Class60001])
-	(typeOfTheService recreation))
+	(X_Coord 1600.0)
+	(Y_Coord 1400.0))
 
 ([Housing_Class50001] of  CITY_ADDRESS
 
@@ -174,73 +146,37 @@
 
 ([Housing_Class50002] of  Coordinates
 
-	(X_Coord 1500.0)
-	(Y_Coord 6000.0))
+	(X_Coord 1200.0)
+	(Y_Coord 4000.0))
 
 ([Housing_Class50003] of  SERVICES
 
 	(nameOfTheService "supermarket")
-	(serviceLocation [Housing_Class50004])
+	(serviceLocation [Housing_Class80020])
 	(typeOfTheService shops))
-
-([Housing_Class50004] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class50005]))
-
-([Housing_Class50005] of  Coordinates
-
-	(X_Coord 4000.0)
-	(Y_Coord 4000.0))
 
 ([Housing_Class50006] of  SERVICES
 
 	(nameOfTheService "club")
-	(serviceLocation [Housing_Class50007])
+	(serviceLocation [Housing_Class50001])
 	(typeOfTheService recreation))
-
-([Housing_Class50007] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class50008]))
-
-([Housing_Class50008] of  Coordinates
-
-	(X_Coord 9000.0)
-	(Y_Coord 9000.0))
 
 ([Housing_Class50009] of  SERVICES
 
 	(nameOfTheService "zoo")
-	(serviceLocation [Housing_Class50010])
+	(serviceLocation [Housing_Class80026])
 	(typeOfTheService greenArea))
-
-([Housing_Class50010] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class50011]))
-
-([Housing_Class50011] of  Coordinates
-
-	(X_Coord 9000.0)
-	(Y_Coord 6000.0))
 
 ([Housing_Class50012] of  SERVICES
 
 	(nameOfTheService "theatre")
-	(serviceLocation [Housing_Class50015])
+	(serviceLocation [Housing_Class80032])
 	(typeOfTheService recreation))
-
-([Housing_Class50015] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class50016]))
-
-([Housing_Class50016] of  Coordinates
-
-	(X_Coord 8500.0)
-	(Y_Coord 4000.0))
 
 ([Housing_Class50017] of  SERVICES
 
 	(nameOfTheService "hospital")
-	(serviceLocation [Housing_Class50018])
+	(serviceLocation [Housing_Class80014])
 	(typeOfTheService health))
 
 ([Housing_Class50018] of  CITY_ADDRESS
@@ -249,20 +185,20 @@
 
 ([Housing_Class50019] of  Coordinates
 
-	(X_Coord 8000.0)
+	(X_Coord 800.0)
 	(Y_Coord 4500.0))
 
 ([Housing_Class50020] of  RESIDENTIAL
 
-	(address [Housing_Class50021])
+	(address [Housing_Class60001])
 	(area 100)
-	(fullFlatForRent TRUE)
+	(fullFlatForRent FALSE)
 	(furnishing full)
 	(locAttribute downtown)
 	(number 32)
-	(parkingSpace TRUE)
-	(rent 1000)
-	(roomsForRent 2)
+	(parkingSpace FALSE)
+	(rent 700)
+	(roomsForRent 5)
 	(street "berlin street")
 	(sunlight morning)
 	(swimmingPool FALSE)
@@ -272,54 +208,36 @@
 	(variant flat)
 	(view city))
 
-([Housing_Class50021] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class50022]))
-
-([Housing_Class50022] of  Coordinates
-
-	(X_Coord 4200.0)
-	(Y_Coord 4200.0))
-
 ([Housing_Class50023] of  RESIDENTIAL
 
-	(address [Housing_Class50024])
+	(address [AIProject2pprj_Class4])
 	(area 160)
 	(fullFlatForRent TRUE)
 	(furnishing semi)
-	(locAttribute posh)
+	(locAttribute classy)
 	(number 45)
-	(parkingSpace FALSE)
+	(parkingSpace TRUE)
 	(rent 1800)
-	(roomsForRent 1)
+	(roomsForRent 3)
 	(street "florida street")
 	(sunlight all_day)
-	(swimmingPool TRUE)
-	(temperatureControl TRUE)
-	(totalBedrooms 1)
+	(swimmingPool FALSE)
+	(temperatureControl FALSE)
+	(totalBedrooms 3)
 	(type house)
 	(variant detached)
 	(view city))
 
-([Housing_Class50024] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class50025]))
-
-([Housing_Class50025] of  Coordinates
-
-	(X_Coord 8000.0)
-	(Y_Coord 4000.0))
-
 ([Housing_Class50026] of  RESIDENTIAL
 
-	(address [Housing_Class50027])
+	(address [Housing_Class80020])
 	(area 120)
 	(fullFlatForRent TRUE)
 	(furnishing full)
-	(locAttribute posh)
+	(locAttribute moderate)
 	(number 45)
-	(parkingSpace FALSE)
-	(rent 2000)
+	(parkingSpace TRUE)
+	(rent 1100)
 	(roomsForRent 2)
 	(street "mountain street")
 	(sunlight all_day)
@@ -327,35 +245,27 @@
 	(temperatureControl TRUE)
 	(totalBedrooms 2)
 	(type apartment)
-	(variant duplex))
-
-([Housing_Class50027] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class50028]))
-
-([Housing_Class50028] of  Coordinates
-
-	(X_Coord 8800.0)
-	(Y_Coord 8800.0))
+	(variant flat))
 
 ([Housing_Class50029] of  RESIDENTIAL
 
-	(address [Housing_Class50030])
+	(address [Housing_Class50018])
 	(area 150)
 	(fullFlatForRent TRUE)
-	(furnishing full)
+	(furnishing semi)
 	(locAttribute classy)
 	(number 12)
 	(parkingSpace TRUE)
 	(rent 2500)
-	(roomsForRent 1)
+	(roomsForRent 5)
 	(street "manchester street")
 	(sunlight morning)
-	(swimmingPool TRUE)
+	(swimmingPool FALSE)
 	(temperatureControl TRUE)
-	(totalBedrooms 1)
-	(type house)
-	(variant semi_detached))
+	(totalBedrooms 5)
+	(type apartment)
+	(variant penthouse)
+	(view garden))
 
 ([Housing_Class50030] of  CITY_ADDRESS
 
@@ -363,36 +273,27 @@
 
 ([Housing_Class50031] of  Coordinates
 
-	(X_Coord 1350.0)
-	(Y_Coord 5800.0))
+	(X_Coord 4500.0)
+	(Y_Coord 800.0))
 
 ([Housing_Class50032] of  RESIDENTIAL
 
-	(address [Housing_Class50033])
+	(address [Housing_Class80016])
 	(area 80)
 	(fullFlatForRent TRUE)
 	(furnishing semi)
-	(locAttribute posh)
+	(locAttribute classy)
 	(number 45)
 	(parkingSpace FALSE)
 	(rent 1500)
-	(roomsForRent 1)
+	(roomsForRent 2)
 	(street "capetown street")
-	(sunlight afternoon)
-	(swimmingPool TRUE)
+	(sunlight all_day)
+	(swimmingPool FALSE)
 	(temperatureControl TRUE)
-	(totalBedrooms 1)
+	(totalBedrooms 2)
 	(type apartment)
 	(variant flat))
-
-([Housing_Class50033] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class50034]))
-
-([Housing_Class50034] of  Coordinates
-
-	(X_Coord 8800.0)
-	(Y_Coord 6250.0))
 
 ([Housing_Class60000] of  SERVICES
 
@@ -402,57 +303,30 @@
 
 ([Housing_Class60001] of  CITY_ADDRESS
 
-	(locCoordinates [Housing_Class60002]))
+	(locCoordinates [Housing_Class10000]))
 
 ([Housing_Class60002] of  Coordinates
 
-	(X_Coord 6000.0)
-	(Y_Coord 9000.0))
+	(X_Coord 2000.0)
+	(Y_Coord 2500.0))
 
 ([Housing_Class60003] of  SERVICES
 
-	(nameOfTheService "trainStation")
-	(serviceLocation [Housing_Class60004])
+	(nameOfTheService "bus")
+	(serviceLocation [Housing_Class80020])
 	(typeOfTheService publicTransport))
-
-([Housing_Class60004] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class60005]))
-
-([Housing_Class60005] of  Coordinates
-
-	(X_Coord 5200.0)
-	(Y_Coord 5500.0))
 
 ([Housing_Class60006] of  SERVICES
 
 	(nameOfTheService "resturant")
-	(serviceLocation [Housing_Class60007])
+	(serviceLocation [Housing_Class80018])
 	(typeOfTheService recreation))
-
-([Housing_Class60007] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class60008]))
-
-([Housing_Class60008] of  Coordinates
-
-	(X_Coord 5500.0)
-	(Y_Coord 3500.0))
 
 ([Housing_Class60009] of  SERVICES
 
 	(nameOfTheService "nightBar")
-	(serviceLocation [Housing_Class60010])
+	(serviceLocation [Housing_Class80007])
 	(typeOfTheService recreation))
-
-([Housing_Class60010] of  CITY_ADDRESS
-
-	(locCoordinates [Housing_Class60011]))
-
-([Housing_Class60011] of  Coordinates
-
-	(X_Coord 8800.0)
-	(Y_Coord 8000.0))
 
 ([Housing_Class70001] of  CITY_ADDRESS
 
@@ -460,20 +334,234 @@
 
 ([Housing_Class70002] of  Coordinates
 
-	(X_Coord 1500.0)
+	(X_Coord 700.0)
 	(Y_Coord 4000.0))
 
 ([Housing_Class70003] of  SERVICES
 
-	(nameOfTheService "UB")
+	(nameOfTheService "ESADE")
 	(serviceLocation [Housing_Class70004])
 	(typeOfTheService school))
 
 ([Housing_Class70004] of  CITY_ADDRESS
 
-	(locCoordinates [Housing_Class70005]))
+	(locCoordinates [Housing_Class60002]))
 
-([Housing_Class70005] of  Coordinates
+([Housing_Class80003] of  Coordinates
+
+	(X_Coord 2400.0)
+	(Y_Coord 3300.0))
+
+([Housing_Class80004] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80003]))
+
+([Housing_Class80005] of  SERVICES
+
+	(nameOfTheService "metro")
+	(serviceLocation [Housing_Class80004])
+	(typeOfTheService publicTransport))
+
+([Housing_Class80006] of  Coordinates
+
+	(X_Coord 3400.0)
+	(Y_Coord 2000.0))
+
+([Housing_Class80007] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80006]))
+
+([Housing_Class80008] of  Coordinates
+
+	(X_Coord 200.0)
+	(Y_Coord 4500.0))
+
+([Housing_Class80009] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80008]))
+
+([Housing_Class80010] of  Coordinates
+
+	(X_Coord 3700.0)
+	(Y_Coord 3700.0))
+
+([Housing_Class80011] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80010]))
+
+([Housing_Class80012] of  SERVICES
+
+	(nameOfTheService "park")
+	(serviceLocation [Housing_Class80011])
+	(typeOfTheService greenArea))
+
+([Housing_Class80013] of  Coordinates
+
+	(X_Coord 4600.0)
+	(Y_Coord 3600.0))
+
+([Housing_Class80014] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80013]))
+
+([Housing_Class80015] of  Coordinates
+
+	(X_Coord 5100.0)
+	(Y_Coord 3800.0))
+
+([Housing_Class80016] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80015]))
+
+([Housing_Class80017] of  Coordinates
+
+	(X_Coord 5800.0)
+	(Y_Coord 2800.0))
+
+([Housing_Class80018] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80017]))
+
+([Housing_Class80019] of  Coordinates
+
+	(X_Coord 6200.0)
+	(Y_Coord 2000.0))
+
+([Housing_Class80020] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80019]))
+
+([Housing_Class80022] of  Coordinates
+
+	(X_Coord 7000.0)
+	(Y_Coord 2000.0))
+
+([Housing_Class80023] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80022]))
+
+([Housing_Class80024] of  SERVICES
+
+	(nameOfTheService "bar")
+	(serviceLocation [Housing_Class80023])
+	(typeOfTheService recreation))
+
+([Housing_Class80025] of  Coordinates
+
+	(X_Coord 9800.0)
+	(Y_Coord 2800.0))
+
+([Housing_Class80026] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80025]))
+
+([Housing_Class80027] of  Coordinates
 
 	(X_Coord 6000.0)
-	(Y_Coord 7500.0))
+	(Y_Coord 2200.0))
+
+([Housing_Class80028] of  Coordinates
+
+	(X_Coord 9200.0)
+	(Y_Coord 3700.0))
+
+([Housing_Class80029] of  SERVICES
+
+	(nameOfTheService "bicing")
+	(serviceLocation [Housing_Class80030])
+	(typeOfTheService publicTransport))
+
+([Housing_Class80030] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80028]))
+
+([Housing_Class80031] of  Coordinates
+
+	(X_Coord 7500.0)
+	(Y_Coord 2500.0))
+
+([Housing_Class80032] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80031]))
+
+([Housing_Class80033] of  RESIDENTIAL
+
+	(address [Housing_Class80035])
+	(area 200)
+	(fullFlatForRent FALSE)
+	(furnishing semi)
+	(locAttribute downtown)
+	(number 2)
+	(parkingSpace FALSE)
+	(rent 1200)
+	(roomsForRent 1)
+	(street "labanca")
+	(swimmingPool FALSE)
+	(temperatureControl TRUE)
+	(totalBedrooms 2)
+	(type apartment)
+	(variant flat)
+	(view garden))
+
+([Housing_Class80034] of  Coordinates
+
+	(X_Coord 9300.0)
+	(Y_Coord 3000.0))
+
+([Housing_Class80035] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80034]))
+
+([Housing_Class80036] of  Coordinates
+
+	(X_Coord 2600.0)
+	(Y_Coord 3300.0))
+
+([Housing_Class80037] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80036]))
+
+([Housing_Class80038] of  SERVICES
+
+	(nameOfTheService "restaurant")
+	(serviceLocation [Housing_Class80037])
+	(typeOfTheService recreation))
+
+([Housing_Class80039] of  Coordinates
+
+	(X_Coord 2200.0)
+	(Y_Coord 3300.0))
+
+([Housing_Class80040] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80039]))
+
+([Housing_Class80041] of  SERVICES
+
+	(nameOfTheService "gym")
+	(serviceLocation [Housing_Class80040])
+	(typeOfTheService recreation))
+
+([Housing_Class80042] of  Coordinates
+
+	(X_Coord 400.0)
+	(Y_Coord 4200.0))
+
+([Housing_Class80043] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80042]))
+
+([Housing_Class80044] of  SERVICES
+
+	(nameOfTheService "restaurant")
+	(serviceLocation [Housing_Class80043])
+	(typeOfTheService recreation))
+
+([Housing_Class80045] of  CITY_ADDRESS
+
+	(locCoordinates [Housing_Class80046]))
+
+([Housing_Class80046] of  Coordinates
+
+	(X_Coord 2000.0)
+	(Y_Coord 2000.0))
