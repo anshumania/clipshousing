@@ -842,10 +842,10 @@
          (bind ?recoLevel (send ?recommendation get-recommendationLevel))
          (if(neq ?recoLevel "REJECTED")     
 	 then
-         (if(> 15 ?recoScore)
+         (if(> 10 ?recoScore)
          then  (send ?recommendation put-recommendationLevel "PARTIALLY_ADEQUATE")
          else
-            (if (> 30 ?recoScore)
+            (if (> 25 ?recoScore)
               then (send ?recommendation put-recommendationLevel "ADEQUATE")
             else
                (send ?recommendation put-recommendationLevel "VERY_RECOMMENDABLE")
