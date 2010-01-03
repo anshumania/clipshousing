@@ -555,21 +555,6 @@
 
 )
 
-(defrule distance-filter "Filter the offers by distance"
-   ?profiler <- (profiler (user_profile ?user)(currentState "FINISHED11"))
-   ?recommendation <- (object (is-a Recommendation))
-   ?service <- (object (is-a SERVICES))
-
-   =>
-(printout t "--------------------actualfactProfiler-------------------------------------------------" crlf)
-
- (printout t (send (send ?recommendation get-residential) print))
- (format t "residential offer-%s%n" (send (send ?recommendation get-residential)get-parkingSpace)) 
-        (bind ?serviceName (send ?service get-typeOfTheService))
-        (bind ?distance (calculate-distance (send (send ?recommendation get-residential) get-address) 
-		(send ?service get-serviceLocation)))
-	(format t "distance of %s,%d%n" ?serviceName ?distance)
-)
 
 
 
