@@ -1,4 +1,4 @@
-; Sun Jan 03 06:38:06 CET 2010
+; Sun Jan 03 22:20:31 CET 2010
 ; 
 ;+ (version "3.4.1")
 ;+ (build "Build 537")
@@ -217,7 +217,7 @@
 	(locAttribute classy)
 	(number 45)
 	(parkingSpace TRUE)
-	(rent 1800)
+	(rent 1300)
 	(roomsForRent 3)
 	(street "florida street")
 	(sunlight all_day)
@@ -382,7 +382,7 @@
 
 ([Housing_Class80010] of  Coordinates
 
-	(X_Coord 3700.0)
+	(X_Coord 4700.0)
 	(Y_Coord 3700.0))
 
 ([Housing_Class80011] of  CITY_ADDRESS

@@ -1,0 +1,238 @@
+C:\projects-MAS\AI-MAS\Afresh\ai2\finalai2\clipsHousing>run
+
+C:\projects-MAS\AI-MAS\Afresh\ai2\finalai2\clipsHousing>set CLIPSDIR=C:\Progra~1/CLIPS/BIN
+
+C:\projects-MAS\AI-MAS\Afresh\ai2\finalai2\clipsHousing>call make
+         CLIPS (Quicksilver Beta 3/26/08)
+CLIPS> (clear)
+CLIPS> (load "ai2KBS.clp")
+Defining defclass: %3ACLIPS_TOP_LEVEL_SLOT_CLASS
+Defining defclass: RESIDENTIAL
+Defining defclass: Coordinates
+Defining defclass: SERVICES
+Defining defclass: USER_PROFILE
+Defining defclass: CITY_ADDRESS
+Defining defclass: RENTAL_OFFER
+Defining definstances: ai2KBSinstances
+TRUE
+CLIPS> (reset)
+CLIPS> (load "ai2.clp")
+Defining defclass: Result
+
+[CSTRCPSR1] WARNING: Redefining defmodule: MAIN
+Defining deftemplate: profiler
+Defining defclass: Recommendation
+Defining defmessage-handler: Coordinates
+   Handler print primary defined.
+Defining defmessage-handler: CITY_ADDRESS
+   Handler print primary defined.
+Defining defmessage-handler: RESIDENTIAL
+   Handler print primary defined.
+Defining defmessage-handler: SERVICES
+   Handler print primary defined.
+Defining defmessage-handler: Recommendation
+   Handler print primary defined.
+Defining deffunction: ask-question
+Defining deffunction: ask-open-question
+Defining deffunction: yes-or-no
+Defining deffunction: ask-number
+Defining deffunction: distance
+Defining deffunction: calculate-distance
+Defining deffunction: compare-distance
+Defining deffunction: bonus-nearness
+Defining defrule: startKBS +j+j
+Defining defmodule: createUserProfile
+Defining defrule: user-name +j+j
+Defining defrule: queryRentalOffers +j+j
+Defining defmodule: kbsProfiler
+Defining defrule: determine-user-age +j+j+j
+Defining defrule: determine-mode-of-transport +j+j+j+j
+Defining defrule: determine-weekend-activities =j+j+j+j+j+j
+Defining defrule: determine-shop-routine =j=j+j+j+j+j
+Defining defrule: determine-budget =j=j+j+j+j
+Defining defmodule: advancedProfiler
+Defining defrule: uni-person =j=j+j+j+j
+Defining defrule: married-person =j=j+j+j+j
+Defining defrule: house-specifications +j+j+j+j+j
+Defining defrule: finished-AdvancedProfiling =j=j=j+j+j
+Defining defmodule: factProfiler
+Defining defrule: budget-filter +j+j+j
+Defining defrule: distance-filterByUserProfile =j=j+j+j+j+j+j+j+j+j
+Defining defrule: rentalOffer-filterByUserPreference =j=j+j+j+j+j+j+j+j+j
+Defining defrule: recommendLevel-filter =j=j+j
+Defining defrule: completed-filter =j+j
+Defining defmodule: output
+Defining defrule: printall +j+j+j
+Defining defrule: completed-print =j+j
+Defining defmodule: endKBS
+Defining defrule: terminate +j+j
+TRUE
+CLIPS> (run)
+------------------------------------------
+       Expert system to find a house
+------------------------------------------
+
+Kindly interact with the KBS to get personalized recommendations
+What is your firstname? jack
+What is your secondName? smith
+Is your age above 35 (yes/no)? n
+Do you own a car (yes/no)? y
+What do you generally do on weekends ? ( dine clubbing sports movie ) dine
+Is your favourite team AnyWhereTownClub (yes/no)? n
+Do you shop in bulk (yes/no)? y
+Do you prefer discounts in your purchases ? (yes/no)? y
+What is your maximum budget ? ? [500, 5000] 1200
+Is this budget fixed (not negotiable) (yes/no) ?y
+Do you study (yes/no) ?n
+Are you married (yes/no) ?y
+Do you have children (yes/no) ?n
+Are you looking for some specific features for your house (yes/no) ?y
+Do you wish for temperature control features in your house (yes/no) ?y
+Preference of Furnishing ? (1) Semi (2) Fully (3) Doesnt Matter? [1, 3] 2
+Is a good view from your house very important (yes/no) ?n
+Do you like to swim (yes/no) ?y
+--------------------in printall-------------------------------------------------
+Dear jack,smith
+ THE KBS recommends
+
+Address [ Number, Street 2, labanca
+ [ X : 9300Y : 3000Y : 3000 ]
+] Rent 1200.000000
+
+RecommendationScore : 10
+RecommendationChars : RENT within BUDGET. restaurant IS FAR. gym IS FAR. restaurant IS FAR. bicing I
+S MID-DISTANCE. bar IS FAR. park IS FAR. metro IS FAR. ESADE IS FAR. nightBar IS FAR. resturant IS F
+AR. bus IS FAR. esade IS FAR. hospital IS FAR. theatre IS FAR. zoo IS MID-DISTANCE. club IS FAR. sup
+ermarket IS FAR. stadium IS FAR. bar IS FAR. metro IS FAR. UPC IS FAR. park IS FAR.
+RecommendationUserPrefs :
+RecommendationLevel : ADEQUATE
+
+--------------------in printall-------------------------------------------------
+Dear jack,smith
+ THE KBS recommends
+
+Address [ Number, Street 45, capetown street
+ [ X : 5100Y : 3800Y : 3800 ]
+] Rent 1500.000000
+
+RecommendationScore : 10
+RecommendationChars : RENT within BUDGET. restaurant IS FAR. gym IS FAR. restaurant IS FAR. bicing I
+S FAR. bar IS FAR. park IS FAR. metro IS FAR. ESADE IS FAR. nightBar IS FAR. resturant IS FAR. bus I
+S FAR. esade IS FAR. hospital IS MID-DISTANCE. theatre IS FAR. zoo IS FAR. club IS FAR. supermarket
+IS FAR. stadium IS FAR. bar IS FAR. metro IS FAR. UPC IS FAR. park IS FAR.
+RecommendationUserPrefs :
+RecommendationLevel : ADEQUATE
+
+--------------------in printall-------------------------------------------------
+Dear jack,smith
+ THE KBS recommends
+
+Address [ Number, Street 12, manchester street
+ [ X : 800Y : 4500Y : 4500 ]
+] Rent 2500.000000
+
+RecommendationScore : 9
+RecommendationChars : REJECTEDrestaurant IS NEAR. gym IS FAR. restaurant IS FAR. bicing IS FAR. bar
+IS FAR. park IS FAR. metro IS FAR. ESADE IS FAR. nightBar IS FAR. resturant IS FAR. bus IS FAR. esad
+e IS MID-DISTANCE. hospital IS FAR. theatre IS FAR. zoo IS FAR. club IS MID-DISTANCE. supermarket IS
+ FAR. stadium IS FAR. bar IS MID-DISTANCE. metro IS FAR. UPC IS FAR. park IS MID-DISTANCE.
+RecommendationUserPrefs :
+RecommendationLevel : REJECTED
+
+--------------------in printall-------------------------------------------------
+Dear jack,smith
+ THE KBS recommends
+
+Address [ Number, Street 45, mountain street
+ [ X : 6200Y : 2000Y : 2000 ]
+] Rent 1100.000000
+
+RecommendationScore : 14
+RecommendationChars : RENT within BUDGET. restaurant IS FAR. gym IS FAR. restaurant IS FAR. bicing I
+S FAR. bar IS MID-DISTANCE. park IS FAR. metro IS FAR. ESADE IS FAR. nightBar IS FAR. resturant IS M
+ID-DISTANCE. bus IS NEAR. esade IS FAR. hospital IS FAR. theatre IS FAR. zoo IS FAR. club IS FAR. su
+permarket IS NEAR. stadium IS FAR. bar IS FAR. metro IS FAR. UPC IS FAR. park IS FAR.
+RecommendationUserPrefs :
+RecommendationLevel : ADEQUATE
+
+--------------------in printall-------------------------------------------------
+Dear jack,smith
+ THE KBS recommends
+
+Address [ Number, Street 45, florida street
+ [ X : 500Y : 2400Y : 2400 ]
+] Rent 1800.000000
+
+RecommendationScore : 0
+RecommendationChars : REJECTEDrestaurant IS FAR. gym IS FAR. restaurant IS FAR. bicing IS FAR. bar I
+S FAR. park IS FAR. metro IS FAR. ESADE IS FAR. nightBar IS FAR. resturant IS FAR. bus IS FAR. esade
+ IS FAR. hospital IS FAR. theatre IS FAR. zoo IS FAR. club IS FAR. supermarket IS FAR. stadium IS FA
+R. bar IS FAR. metro IS FAR. UPC IS NEAR. park IS FAR.
+RecommendationUserPrefs :
+RecommendationLevel : REJECTED
+
+--------------------in printall-------------------------------------------------
+Dear jack,smith
+ THE KBS recommends
+
+Address [ Number, Street 32, berlin street
+ [ X : 2500Y : 3000Y : 3000 ]
+] Rent 700.000000
+
+RecommendationScore : 22
+RecommendationChars : RENT within BUDGET. restaurant IS FAR. gym IS NEAR. restaurant IS NEAR. bicing
+ IS FAR. bar IS FAR. park IS FAR. metro IS NEAR. ESADE IS MID-DISTANCE. nightBar IS FAR. resturant I
+S FAR. bus IS FAR. esade IS FAR. hospital IS FAR. theatre IS FAR. zoo IS FAR. club IS FAR. supermark
+et IS FAR. stadium IS MID-DISTANCE. bar IS FAR. metro IS FAR. UPC IS FAR. park IS FAR.
+RecommendationUserPrefs :
+RecommendationLevel : ADEQUATE
+
+--------------------in printall-------------------------------------------------
+Dear jack,smith
+ THE KBS recommends
+
+Address [ Number, Street 45, london street
+ [ X : 1600Y : 1400Y : 1400 ]
+] Rent 700.000000
+
+RecommendationScore : 12
+RecommendationChars : RENT within BUDGET. restaurant IS FAR. gym IS FAR. restaurant IS FAR. bicing I
+S FAR. bar IS FAR. park IS FAR. metro IS FAR. ESADE IS FAR. nightBar IS FAR. resturant IS FAR. bus I
+S FAR. esade IS FAR. hospital IS FAR. theatre IS FAR. zoo IS FAR. club IS FAR. supermarket IS FAR. s
+tadium IS MID-DISTANCE. bar IS FAR. metro IS NEAR. UPC IS FAR. park IS FAR.
+RecommendationUserPrefs :
+RecommendationLevel : ADEQUATE
+
+--------------------in printall-------------------------------------------------
+Dear jack,smith
+ THE KBS recommends
+
+Address [ Number, Street 23, rome street
+ [ X : 1900Y : 1900Y : 1900 ]
+] Rent 500.000000
+
+RecommendationScore : 15
+RecommendationChars : RENT within BUDGET. restaurant IS FAR. gym IS FAR. restaurant IS FAR. bicing I
+S FAR. bar IS FAR. park IS FAR. metro IS FAR. ESADE IS MID-DISTANCE. nightBar IS FAR. resturant IS F
+AR. bus IS FAR. esade IS FAR. hospital IS FAR. theatre IS FAR. zoo IS FAR. club IS FAR. supermarket
+IS FAR. stadium IS NEAR. bar IS FAR. metro IS MID-DISTANCE. UPC IS FAR. park IS FAR.
+RecommendationUserPrefs :
+RecommendationLevel : ADEQUATE
+
+--------------------in printall-------------------------------------------------
+Dear jack,smith
+ THE KBS recommends
+
+Address [ Number, Street 13, newyork street
+ [ X : 850Y : 2750Y : 2750 ]
+] Rent 3200.000000
+
+RecommendationScore : 0
+RecommendationChars : REJECTEDrestaurant IS FAR. gym IS FAR. restaurant IS FAR. bicing IS FAR. bar I
+S FAR. park IS FAR. metro IS FAR. ESADE IS FAR. nightBar IS FAR. resturant IS FAR. bus IS FAR. esade
+ IS FAR. hospital IS FAR. theatre IS FAR. zoo IS FAR. club IS FAR. supermarket IS FAR. stadium IS FA
+R. bar IS FAR. metro IS FAR. UPC IS NEAR. park IS FAR.
+RecommendationUserPrefs :
+RecommendationLevel : REJECTED
+
+CLIPS>

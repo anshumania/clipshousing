@@ -395,9 +395,10 @@
 	(bind ?maximumBudget (ask-number "What is your maximum budget ? " 500 5000))
  	(if (yes-or-no "Is this budget fixed (not negotiable) (yes/no) ?" ) 
          then
-	    ( send ?user put-maxBudget (* ?maximumBudget 1.375 ))
-	  else
 	    ( send ?user put-maxBudget ?maximumBudget)
+	  else
+	    ( send ?user put-maxBudget (* ?maximumBudget 1.375 ))
+	    
 	)
   (modify ?profiler(currentState "ADVANCEDPROFILING"))
   )
